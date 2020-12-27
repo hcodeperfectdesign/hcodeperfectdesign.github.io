@@ -55,9 +55,9 @@ divulgar os produtos ou serviços.
 
 ### Criar estrutura básica do projeto
 
-* [ ] Repositório local;
-* [ ] Repositório Git Hub;
-* [ ] Conectar repositórios;
+* [x] Repositório local;
+* [x] Repositório Git Hub;
+* [x] Conectar repositórios;
 * [ ] Criar package.json com extensões;
 * [ ] Criar arquivos sass (mixin, default, variáveis, fonts, etc.);
 * [ ] Gerar arquivos svg para a logo da aba do browser.
@@ -95,12 +95,10 @@ Para aqueles que não querem trilhar a carreira solo, o maior número de vagas d
 
 ---
 
-Goiânia é uma das melhores capitais do Brasil para se viver. Com aproximadamente 1.5 milhão de habitantes, foi reconhecida pela Organização das nações Unidas como a [uma das cidades mais verdes do mundo](https://www.goiania.go.gov.br/sobre-goiania/), perdendo apenas para Edmonton, no Canadá. Mas não só isso, é um lugar excelente para se viver, com o povo acolhedor, divertido e de bom gosto. Os condomínios horizontais tomaram conta da cidade, que contam com diversos de alto padrão, como o Aldeia do Vale, Alphaville Flamboyant e mais de uma dezena de Jardins (Florença, Madri, Viena, Mônaco, etc).
+Goiânia é uma das melhores capitais do Brasil para se viver. Com aproximadamente 1.5 milões de habitantes, foi reconhecida pela Organização das nações Unidas como a [capital verde do Brasil](https://www.goiania.go.gov.br/sobre-goiania/) e uma das melhores do mundo, perdendo apenas para Edmonton, no Canadá. Mas não só isso, é um lugar excelente para se viver, pois conta com condomínios de alto padrão, como o Aldeia do Vale, Alphaville Flamboyant e mais de uma dezena de condomínios horizontais Jardins.
 
-Paulo e Karen Hoffman, ambos designer de interior com puplicações constantes na Casa Cor e reconhecidos pelo talento, após alguns anos trabalhando em renomadas companhias, após inúmeras exposições na cidade e percebendo o excelente mercado goiano, resolveram se mudar para Goiânia e seguir carreira solo abrindo a **Perfect Design**, onde pretendem desenvolver o seu talento e fazer parceria com outros profissionais para oferecer uma linha variada de produtos e serviços. Embora excelentes profissionais nas suas respectivas áreas e acostumados ao belo, na hora de construir o site da empresa, preferiram não se arriscar e nos encomendaram a construção de sua identidade visual e o seu site. A única exigência é de que seja um site clean e que o destaque fique para os seus produtos.
+O casal Paulo e Karen Joyment, designers de interior com puplicações constantes na Casa Cor Casa Claudia, Anual Design e outras, após alguns anos trabalhando em renomadas empresas de São Paulo e Curitiba, depois de participarem de algumas  feiras e eventos em Goiânia e percebendo o excelente mercado, resolveram levar um ritmo menos acelerado, mas não menos intenso e decidiram seguir carreira solo, abrindo a **Perfect Design**, empresa de design de interior, onde pretendem desenvolver os seus próprios projetos e ainda, trabalhar em parceria com outros profissionais para oferecer uma linha variada de produtos e serviços. Embora sejam excelentes profissionais na sua área e acostumados ao belo, na hora de construir o seu site preferiram não se arriscar e nos terceirizaram a construção de sua logomarca e o seu site. A única exigência deles é de que seja um site clean e que o destaque seja para os produtos.
 
 Embora não entendam de infraestrutura de TI, de tráfego de rede e de armazenamento de imagens, eles sabem como fotografias ocupam espaço e deixam a navegação mais lenta, por isso nos solicitaram para que a navegação seja a melhor possível, colocando à nossa disposição o seu acervo fotográfico. Diante disto, temos o desafio de fazer algo bonito e leve.
 
 Eles querem aque a página principal exiba imagens de seus projetos mais interessantes, bem como o de seus parceiros de modo atraente, exibindo uma foto em miniatura do profissional e já deixando o número do WhatsApp junto às suas obras para facilitar o contato, visto que, de modo geral os projetos são personalizados e atendem a um público mais exigente e com melhor poder aquisitivo. Nesse caso, o cliente que se sentir atraído pela obra poderá navegar rapidamente para a página do profissional ou entrar em contato com ele sem perder tempo. Querem um campo de pesquisa, por causa da grande quantidade de produtos que pretendem catalogar, o cadastro de clientes, tanto corporativo quanto pessoa física. No menu eles pediram uma página de produtos, uma de designers, uma de projetos. Eles não precisam de uma página específica de Quem Somos porque na página de projetos deverá falar dos profissionais.
-
-Fim.
