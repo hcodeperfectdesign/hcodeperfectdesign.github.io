@@ -326,6 +326,7 @@ hr.trace {
   width: 100vw;
   justify-content: space-between;
   align-self: center;
+  margin: 0 10px;
 }
 #products .product-option a {
   display: flex;
