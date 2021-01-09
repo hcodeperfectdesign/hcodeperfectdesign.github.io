@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+}
+
+body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure, picture, hr {
+    display: flex;
+}
+
+body {
+    margin: 0;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    > main {
+        min-height: calc(100vh - 350px);
+    }
+}
+
+hr {
+    &.trace {
+        background-color: var(--gray-bf);
+        width: calc(100% - 2em);
+        height: 1px;
+        margin: 3em 0;
+        border: none;
+        align-self: center;
+    }
+}
