@@ -120,25 +120,35 @@ hr.trace {
   margin-right: 10px;
 }
 #header #menu {
+  flex-direction: column;
   transition: all 0.5s ease-in-out;
-  display: flex;
-  width: 300px;
+  width: 320px;
   height: 370px;
   position: absolute;
   background-color: var(--gray-ef);
   top: -370px;
-  right: -300px;
-  flex-direction: column;
-}
-#header #menu nav a {
-  text-decoration: none;
-  color: var(--black-26);
-  text-transform: uppercase;
+  right: -320px;
 }
 #header #menu nav ul {
-  margin: 0 1em;
+  width: 320px;
+  margin: 10px;
   padding: 0;
   flex-direction: column;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#header #menu nav ul #header-menu {
+  align-items: center;
+  justify-content: space-between;
+}
+#header #menu nav ul #header-menu li {
+  justify-content: space-between;
+}
+#header #menu nav ul #header-menu li a {
+  text-decoration: none;
+  color: var(--black-26);
+  font-weight: 600;
+  font-size: 16px;
 }
 #header #menu nav ul .divider {
   padding: 0;
@@ -146,15 +156,14 @@ hr.trace {
   border-top: 1px solid var(--gray-e4);
   margin-top: 10px;
 }
-#header #menu nav ul #header-menu {
-  justify-content: space-between;
-  margin-top: 20px;
-  font-size: 20px;
-}
 #header #menu nav ul .items-menu {
   justify-content: space-between;
-  font-size: 18px;
+}
+#header #menu nav ul .items-menu a {
+  font-size: 16px;
   margin: 10px 0;
+  text-decoration: none;
+  color: var(--gray-72);
 }
 
 .open-menu {
@@ -175,6 +184,7 @@ hr.trace {
 }
 
 #home {
+  min-width: 320px;
   width: 100%;
   height: 100vh;
   background-color: var(--bg-color);
@@ -198,10 +208,11 @@ hr.trace {
 }
 #home header h1 {
   font-family: "Montserrat Alternates";
-  font-size: 30px;
-  color: white;
+  font-size: 24px;
+  color: var(--gray-e4);
   font-weight: 400;
   text-align: center;
+  text-shadow: 0 0.1px 0.1px var(--black);
 }
 #home header a {
   display: flex;
