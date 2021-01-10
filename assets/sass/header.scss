@@ -1,11 +1,11 @@
 #header {
     min-width: 320px;
-    width: 100vw;
+    width: 100%;
     height: 100px;
-    position: relative;
     background-color: var(--gray-ef);
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
     .overlay {
         display: none;
     }
