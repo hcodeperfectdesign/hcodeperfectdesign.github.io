@@ -108,6 +108,7 @@
     position: relative;
     h2 {
         @include title;
+        margin-top: 0;
     }
     #search-products {
         position: relative;
@@ -197,7 +198,20 @@
                 }
             }
         }
-
+        ul {
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            li {
+                width: 8px;
+                height: 8px;
+                background-color: var(--gray-f2);
+                margin: 5px 2px;
+                &:first-child {
+                    background-color: var(--gray-72);
+                }
+            }
+        }
     }
 }
 

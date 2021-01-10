@@ -299,6 +299,7 @@ hr.trace {
   margin: 40px 0;
   text-align: center;
   color: var(--gray-72);
+  margin-top: 0;
 }
 #products #search-products {
   position: relative;
@@ -380,6 +381,20 @@ hr.trace {
   position: absolute;
   top: calc(50% - 25px);
   left: 20px;
+}
+#products .products-navigation ul {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+#products .products-navigation ul li {
+  width: 8px;
+  height: 8px;
+  background-color: var(--gray-f2);
+  margin: 5px 2px;
+}
+#products .products-navigation ul li:first-child {
+  background-color: var(--gray-72);
 }
 
 #contact {
