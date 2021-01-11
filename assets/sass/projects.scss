@@ -1,0 +1,60 @@
+#projects {
+    flex-direction: column;
+    width: 100%;
+    h1 {
+        @include title;
+    }
+    > strong {
+        margin-bottom: 20px;
+        color: var(--gray-72);
+        margin-left: 10px;
+        small {
+            background-color: var(--gray-72);
+            font-size: 14px;
+            color: var(--gray-ef);
+            border: var(--gray-72) solid 2px;
+            border-radius: 50%;
+        }
+    }
+    #gallery-selectors {
+        width: 100vw;
+        justify-content: space-between;
+        select {
+            flex: 1;
+            border: 0;
+            padding: 0;
+            font-size: 14px;
+            color: var(--gray-72);
+            border-top: var(--gray-72) solid 1px;
+            &:first-child {
+                border-right: var(--gray-72) solid 1px;
+            }
+        }
+    }
+    #gallery-photos {
+        flex-direction: column;
+        picture {
+            flex-direction: column;
+            margin-bottom: 40px;
+            img {
+                width: 100%;
+            }
+            strong {
+                color: var(--gray-26);
+                margin-left: 10px;
+            }
+            small {
+                font-size: 12px;
+                margin-left: 10px;
+            }
+            article {
+                margin: 10px 30px;
+                text-align: justify;
+                font-family: 'Montserrat Alternates';
+                font-weight: 300;
+                font-size: 14px;
+                color: var(--gray-72);
+            }
+        }
+    }
+}

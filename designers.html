@@ -19,9 +19,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/vetor/favicon-16x16.png" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="msapplication-TileColor" content="#EFEFEF" />
+    <meta name="msapplication-TileImage" content="assets/img/vetor/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#EFEFEF" />
+    <meta name="description" content="A Perfect Design traz a natureza para dentro da sua casa" />
 </head>
 <body>
     <header id="header">
@@ -31,41 +32,80 @@
             <img src="assets/img/svg/btn-menu.svg" alt="Icone Menu" />
         </button>
         <div id="menu">
-            <ul>
-                <div id="header-menu">
-                        <li><a href="index.html#header"><img src="assets/img/svg/gray-left-arrow.svg" alt="Seta esquerda" /></a></li>
+            <nav>
+                <ul>
+                    <div id="header-menu">
+                        <li><a href="index.html#header"><img src="assets/img/svg/leftgray-arrow.svg" alt="Seta esquerda" /></a></li>
                         <li><a href="index.html#header">Página Inicial</a></li>
                         <li><a href="index.html#header"><img src="assets/img/svg/logo-02.svg" alt="Logo P" /></a></li>
-                </div>
-                <div class="divider"><hr /></div>
-                <div class="items-menu">
-                    <li><a href="projects.html">Projetos</a></li>
-                    <li><a href="projects.html"><img src="assets/img/svg/gray-right-arrow.svg" alt=""></a></li>
-                </div>
-                <div class="items-menu">
-                    <li><a href="designers.html">Designers</a></li>
-                    <li><a href="designers.html"><img src="assets/img/svg/gray-right-arrow.svg" alt=""></a></li>
-                </div>
-                <div class="items-menu">
-                    <li><a href="products.html">Produtos</a></li>
-                    <li><a href="products.html"><img src="assets/img/svg/gray-right-arrow.svg" alt=""></a></li>
-                </div>
-                <div class="divider"><hr /></div>
-                <div class="items-menu">
-                    <li><a href="auth.html">Minha Conta</a></li>
-                    <li><a href="auth.html"><img src="assets/img/svg/gray-login.svg" alt=""></a></li>
-                </div>
-                <div class="items-menu">
-                    <li><a href="orders.html">Meus Pedidos</a></li>
-                    <li><a href="orders.html"><img src="assets/img/svg/order.svg" alt=""></a></li>
-                </div>
-            </ul>
+                    </div>
+                    <div class="divider"><hr /></div>
+                    <div class="items-menu">
+                        <li><a href="projects.html">Projetos</a></li>
+                        <li><a href="projects.html"><img src="assets/img/svg/rightgray-arrow.svg" alt=""></a></li>
+                    </div>
+                    <div class="items-menu">
+                        <li><a href="designers.html">Designers</a></li>
+                        <li><a href="designers.html"><img src="assets/img/svg/rightgray-arrow.svg" alt=""></a></li>
+                    </div>
+                    <div class="items-menu">
+                        <li><a href="products.html">Produtos</a></li>
+                        <li><a href="products.html"><img src="assets/img/svg/rightgray-arrow.svg" alt=""></a></li>
+                    </div>
+                    <div class="divider"><hr /></div>
+                    <div class="items-menu">
+                        <li><a href="auth.html">Minha Conta</a></li>
+                        <li><a href="auth.html"><img src="assets/img/svg/gray-login.svg" alt=""></a></li>
+                    </div>
+                    <div class="items-menu">
+                        <li><a href="orders.html">Meus Pedidos</a></li>
+                        <li><a href="orders.html"><img src="assets/img/svg/order.svg" alt=""></a></li>
+                    </div>
+                </ul>
+            </nav>
         </div>
     </header>
-    <div id="home">
-
+    <div id="designers">
+        <h1>Conheça nossos profissionais</h1>
+        <select name="designer-projects" id="designer-projects">
+            <option value="1">Escolha o profissional</option>
+            <option value="2">Paulo Bittar</option>
+            <option value="3">Karen Bittar</option>
+            <option value="4">Leo Queiroz</option>
+            <option value="5">Patrícia Franco</option>
+        </select>
+        <div class="designer-information">
+            <div id="designer-id">
+                <h2>Paulo Bittar</h2>
+                <picture>
+                    <img src="assets/img/svg/clear-whatsapp.svg" alt="Logo WhatsApp">
+                    <img src="assets/img/svg/clear-instagram.svg" alt="Logo WhatsApp">
+                </picture>
+            </div>
+            <picture class="designer-photo">
+                <img src="assets/img/webp/img-paulo-768.webp" alt="Foto Paulo">
+            </picture>
+            <article>
+                Paulo Bittar é designer de interior com grande experiência em projetos comerciais e residenciais. Seu traço é conceitual e equilibrado, sempre focado na essência do cliente. Sua decoração contemporânea e cosmopolita aposta no conforto e no bem-estar, com um traço simples e poético do genuíno material brasileiro moderno.
+            </article>
+        </div>
+        <div class="designer-information">
+            <div id="designer-id">
+                <h2>Karen Bittar</h2>
+                <picture>
+                    <img src="assets/img/svg/clear-whatsapp.svg" alt="Logo WhatsApp">
+                    <img src="assets/img/svg/clear-instagram.svg" alt="Logo WhatsApp">
+                </picture>
+            </div>
+            <picture class="designer-photo">
+                <img src="assets/img/webp/img-karen-768.webp" alt="Foto Karen">
+            </picture>
+            <article>
+                Karen Bittar é designer de interior executando projetos comerciais e residenciais, mas se sente mais à vontade em ambientes residenciais, especialmente no modelo sustentável. Ela possui ateliê próprio onde recupera peças consideradas sem valor e as transforma em verdadeiras obras de arte e é reconhecida pelo seu talento.
+            </article>
+        </div>
     </div>
-    <div id="footer">
+    <footer>
         <div id="footer-contact">
             <div id="social-media">
                 <strong>Contato</strong>
@@ -86,6 +126,6 @@
             </div>
         </div>
         <p>©2023 por Hcode Lab - Red Clan Group</p>
-    </div>
+    </footer>
 </body>
 </html>

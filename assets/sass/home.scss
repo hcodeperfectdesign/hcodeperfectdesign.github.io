@@ -65,7 +65,7 @@
             }
         }
         .professional-profile {
-            .designer-id {
+            .personal-id {
                 width: 35%;
                 flex-direction: column;
                 margin-left: 10px;
@@ -96,7 +96,6 @@
                     height: 30px;
                     margin-top: 5px;
                     margin-right: 3px;
-                    // margin: 5px;
                 }
             }
         }
@@ -108,6 +107,7 @@
     position: relative;
     h2 {
         @include title;
+        margin-top: 0;
     }
     #search-products {
         position: relative;
@@ -143,7 +143,7 @@
         align-self: center;
     }
     .product-option {
-        width: 100vw;
+        width: 98vw;
         justify-content: space-between;
         align-self: center;
         margin: 0 10px;
@@ -185,9 +185,9 @@
                 img {
                     position: absolute;
                     height: 50px;
-                    right: 25px;
                     &:first-child {
-                        top: calc(50% - 25px)
+                        top: calc(50% - 25px);
+                        right: 20px;
                     }
                     &:last-child {
                         position: absolute;
@@ -197,7 +197,20 @@
                 }
             }
         }
-
+        ul {
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            li {
+                width: 8px;
+                height: 8px;
+                background-color: var(--gray-f2);
+                margin: 5px 2px;
+                &:first-child {
+                    background-color: var(--gray-72);
+                }
+            }
+        }
     }
 }
 
