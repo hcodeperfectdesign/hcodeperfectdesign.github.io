@@ -254,16 +254,16 @@ hr.trace {
 #projects .project-designers picture > img {
   width: 100%;
 }
-#projects .project-designers .professional-profile .designer-id {
+#projects .project-designers .professional-profile .personal-id {
   width: 35%;
   flex-direction: column;
   margin-left: 10px;
 }
-#projects .project-designers .professional-profile .designer-id strong {
+#projects .project-designers .professional-profile .personal-id strong {
   font-family: merienda;
   font-size: 16px;
 }
-#projects .project-designers .professional-profile .designer-id small {
+#projects .project-designers .professional-profile .personal-id small {
   font-size: 10px;
 }
 #projects .project-designers .professional-profile #photo {
