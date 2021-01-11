@@ -144,7 +144,7 @@
         align-self: center;
     }
     .product-option {
-        width: 100vw;
+        width: 98vw;
         justify-content: space-between;
         align-self: center;
         margin: 0 10px;
@@ -186,9 +186,9 @@
                 img {
                     position: absolute;
                     height: 50px;
-                    right: 25px;
                     &:first-child {
-                        top: calc(50% - 25px)
+                        top: calc(50% - 25px);
+                        right: 20px;
                     }
                     &:last-child {
                         position: absolute;

@@ -1,10 +1,10 @@
 footer {
     min-width: 320px;
     width: 100%;
+    flex-direction: column;
     height: 150px;
     background-color: var(--black);
     padding: 10px;
-    flex-direction: column;
     #footer-contact {
         justify-content: space-be;
         align-items: center;
