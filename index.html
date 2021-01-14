@@ -27,7 +27,7 @@
 <body>
     <header id="header">
         <div class="overlay"></div>
-        <a href="index.html#home"><img src="assets/img/svg/logo-01.svg" alt="Logo Perfect Design" /></a>
+        <a href="index.html#home"><img src="assets/img/svg/logo-01.svg" id="logo" alt="Logo Perfect Design" /></a>
         <button id="open-btn">
             <img src="assets/img/svg/btn-menu.svg" alt="Icone Menu" />
         </button>
@@ -35,9 +35,9 @@
             <nav>
                 <ul>
                     <div id="header-menu">
-                        <li><a href="index.html#header"><img src="assets/img/svg/leftgray-arrow.svg" alt="Seta esquerda" /></a></li>
-                        <li><a href="index.html#header">Página Inicial</a></li>
-                        <li><a href="index.html#header"><img src="assets/img/svg/logo-02.svg" alt="Logo P" /></a></li>
+                        <li><img src="assets/img/svg/leftgray-arrow.svg" alt="Seta esquerda" /></li>
+                        <li>Página Inicial</li>
+                        <li><img src="assets/img/svg/logo-02.svg" alt="Logo P" /></li>
                     </div>
                     <div class="divider"><hr /></div>
                     <div class="items-menu">
@@ -55,7 +55,7 @@
                     <div class="divider"><hr /></div>
                     <div class="items-menu">
                         <li><a href="auth.html">Minha Conta</a></li>
-                        <li><a href="auth.html"><img src="assets/img/svg/gray-login.svg" alt=""></a></li>
+                        <li><a href="auth.html"><img src="assets/img/svg/login.svg" alt=""></a></li>
                     </div>
                     <div class="items-menu">
                         <li><a href="orders.html">Meus Pedidos</a></li>
@@ -65,149 +65,178 @@
             </nav>
         </div>
     </header>
-    <section id="home">
-        <header>
-            <h1>Projetos personalizados</h1>
-            <a>Saiba mais</a>
-        </header>
-    </section>
-    <section id="projects">
-        <h2>Conheça nossos designers</h2>
-        <div class="project-designers">
-            <picture>
-                <img src="assets/img/webp/img-768-01.webp" alt="Projetos Paulo Bittar">
-            </picture>
-            <div class="professional-profile">
-                <div class="personal-id">
-                    <strong>Paulo Bittar</strong>
-                    <small>Office Desinger</small>
-                </div>
-                <picture id="photo">
-                    <img src="assets/img/webp/paulo-icone.webp" alt="Foto Paulo Bittar">
-                </picture>
-                <picture id="designer-contact">
-                    <img src="assets/img/svg/clear-whatsapp.svg" alt="Logo WhatsApp">
-                    <img src="assets/img/svg/clear-instagram.svg" alt="Logo Instagram">
-                </picture>
-            </div>
-        </div>
-        <div class="project-designers">
-            <picture>
-                <img src="assets/img/webp/img-768-02.webp" alt="Projetos Karen Bittar">
-            </picture>
-            <div class="professional-profile">
-                <div class="personal-id">
-                    <strong>Karen Bittar</strong>
-                    <small>Office Desinger</small>
-                </div>
-                <picture id="photo">
-                    <img src="assets/img/webp/karen-icone.webp" alt="Foto Karen Bittar">
-                </picture>
-                <picture id="designer-contact">
-                    <img src="assets/img/svg/clear-whatsapp.svg" alt="Logo WhatsApp">
-                    <img src="assets/img/svg/clear-instagram.svg" alt="Logo Instagram">
-                </picture>
-            </div>
-        </div>
-        <div class="project-designers">
-            <picture>
-                <img src="assets/img/webp/img-768-03.webp" alt="Projetos Patrícia Franco">
-            </picture>
-            <div class="professional-profile">
-                <div class="personal-id">
-                    <strong>Patrícia Franco</strong>
-                    <small>Office Desinger</small>
-                </div>
-                <picture id="photo">
-                    <img src="assets/img/webp/patricia-icone.webp" alt="Foto Patrícia Franco">
-                </picture>
-                <picture id="designer-contact">
-                    <img src="assets/img/svg/clear-whatsapp.svg" alt="Logo WhatsApp">
-                    <img src="assets/img/svg/clear-instagram.svg" alt="Logo Instagram">
-                </picture>
-            </div>
-        </div>
-        <div class="project-designers">
-            <picture>
-                <img src="assets/img/webp/img-768-04.webp" alt="Projetos Leo Queiroz">
-            </picture>
-            <div class="professional-profile">
-                <div class="personal-id">
-                    <strong>Leo Queiroz</strong>
-                    <small>Office Desinger</small>
-                </div>
-                <picture id="photo">
-                    <img src="assets/img/webp/leo-icone.webp" alt="Foto Leo Queiroz">
-                </picture>
-                <picture id="designer-contact">
-                    <img src="assets/img/svg/clear-whatsapp.svg" alt="Logo WhatsApp">
-                    <img src="assets/img/svg/clear-instagram.svg" alt="Logo Instagram">
-                </picture>
-            </div>
-        </div>
-    </section>
-    <section id="products">
-        <h2>Conheça nossos Produtos</h2>
-        <div id="search-products">
-            <input type="text" name="product" id="product" />
-            <img id="magnifier" src="assets/img/svg/magnifier.svg" alt="Lupa">
-        </div>
-        <p>clique no coração e adicione à sua lista de desejos</p>
-        <div class="product-option">
-            <a href="#">Móveis</a>
-            <a href="#">Acessórios</a>
-            <a href="#">Iluminação</a>
-        </div>
-        <div class="products-navigation">
-            <picture>
-                <img id="forniture" src="assets/img/webp/sofa-768.webp" alt="Foto Sofá">
-                <img id="hearth" src="assets/img/svg/outline-heart.svg" alt="Coração">
-            </picture>
-            <nav>
+    <main id="projects">
+        <section id="home">
+            <header>
+                <h1>Projetos personalizados</h1>
+                <a href="products.html">Saiba mais</a>
+            </header>
+        </section>
+        <section id="project-photos">
+            <h2>Conheça nossos designers</h2>
+            <div class="project-designers">
                 <picture>
-                    <img src="assets/img/svg/clearright-arrow.svg" alt="Seta">
-                    <img src="assets/img/svg/leftfine-arrow.svg" alt="Seta">
+                    <source srcset="assets/img/webp/img-800-01.webp" media="(min-width: 1024px)" />
+                    <img src="assets/img/webp/img-768-01.webp" alt="Projetos Paulo Bittar" />
                 </picture>
-            </nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-    </section>
-    <section id="contact">
-        <a href="contact.html">Minha Conta</a>
-        <picture>
-            <img src="assets/img/svg/gray-login.svg" alt="Ícone Login">
-            <img src="assets/img/svg/gray-right-arrow.svg" alt="Seta">
-        </picture>
-    </section>
+                <div class="professional-profile">
+                    <div class="personal-id">
+                        <strong>Paulo Bittar</strong>
+                        <small>Office Desinger</small>
+                    </div>
+                    <picture class="photo">
+                        <source srcset="assets/img/webp/paulo-icone-150x150.webp" media="(min-width: 1366px)" />
+                        <source srcset="assets/img/webp/paulo-icone-120x120.webp" media="(min-width: 1024px)" />
+                        <img src="assets/img/webp/paulo-icone-90x90.webp" alt="Foto Paulo Bittar">
+                    </picture>
+                    <picture class="designer-contact">
+                        <img src="assets/img/svg/clear-whatsapp.svg" alt="Logo WhatsApp">
+                        <img src="assets/img/svg/clear-instagram.svg" alt="Logo Instagram">
+                    </picture>
+                </div>
+            </div>
+            <div class="project-designers">
+                <picture>
+                    
+                    <img src="assets/img/webp/img-768-02.webp" alt="Projetos Karen Bittar">
+                </picture>
+                <div class="professional-profile">
+                    <div class="personal-id">
+                        <strong>Karen Bittar</strong>
+                        <small>Office Desinger</small>
+                    </div>
+                    <picture class="photo">
+                        <source srcset="assets/img/webp/karen-icone-150x150.webp" media="(min-width: 1366px)" />
+                        <source srcset="assets/img/webp/karen-icone-120x120.webp" media="(min-width: 1024px)" />
+                        <img src="assets/img/webp/karen-icone-90x90.webp" alt="Foto Karen Bittar">
+                    </picture>
+                    <picture class="designer-contact">
+                        <img src="assets/img/svg/clear-whatsapp.svg" alt="Logo WhatsApp">
+                        <img src="assets/img/svg/clear-instagram.svg" alt="Logo Instagram">
+                    </picture>
+                </div>
+            </div>
+            <div class="project-designers">
+                <picture>
+                    <img src="assets/img/webp/img-768-03.webp" alt="Projetos Patrícia Franco">
+                </picture>
+                <div class="professional-profile">
+                    <div class="personal-id">
+                        <strong>Patrícia Franco</strong>
+                        <small>Office Desinger</small>
+                    </div>
+                    <picture class="photo">
+                        <source srcset="assets/img/webp/patricia-icone-150x150.webp" media="(min-width: 1366px)" />
+                        <source srcset="assets/img/webp/patricia-icone-120x120.webp" media="(min-width: 1024px)" />
+                        <img src="assets/img/webp/patricia-icone-90x90.webp " alt="Foto Patrícia Franco">
+                    </picture>
+                    <picture class="designer-contact">
+                        <img src="assets/img/svg/clear-whatsapp.svg" alt="Logo WhatsApp">
+                        <img src="assets/img/svg/clear-instagram.svg" alt="Logo Instagram">
+                    </picture>
+                </div>
+            </div>
+            <div class="project-designers">
+                <picture>
+                    <img src="assets/img/webp/img-768-04.webp" alt="Projetos Leo Queiroz">
+                </picture>
+                <div class="professional-profile">
+                    <div class="personal-id">
+                        <strong>Leo Queiroz</strong>
+                        <small>Office Desinger</small>
+                    </div>
+                    <picture class="photo">
+                        <source srcset="assets/img/webp/leo-icone-150x150" media="(min-width: 1366)" />
+                        <source srcset="assets/img/webp/leo-icone-120x120.webp" media="min-width: 1024px" />
+                        <img src="assets/img/webp/leo-icone-90x90.webp" alt="Foto Leo Queiroz">
+                    </picture>
+                    <picture class="designer-contact">
+                        <img src="assets/img/svg/clear-whatsapp.svg" alt="Logo WhatsApp">
+                        <img src="assets/img/svg/clear-instagram.svg" alt="Logo Instagram">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section id="products">
+            <h2>Conheça nossos Produtos</h2>
+            <div id="search-products">
+                <input type="text" name="product" id="product" />
+                <img id="magnifier" src="assets/img/svg/magnifier.svg" alt="Lupa">
+            </div>
+            <p>clique no coração e adicione à sua lista de desejos</p>
+            <div class="product-option">
+                <a href="products.html">Móveis</a>
+                <a href="products.html">Acessórios</a>
+                <a href="products.html">Iluminação</a>
+            </div>
+            <div class="products-navigation">
+                <picture>
+                    <img id="forniture" src="assets/img/webp/sofa-768.webp" alt="Foto Sofá">
+                    <img id="hearth" src="assets/img/svg/outline-heart.svg" alt="Coração">
+                </picture>
+                <nav>
+                    <picture>
+                        <img src="assets/img/svg/clearright-arrow.svg" alt="Seta">
+                        <img src="assets/img/svg/leftfine-arrow.svg" alt="Seta">
+                    </picture>
+                </nav>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact">
+            <a href="contact.html">Minha Conta</a>
+            <picture>
+                <img src="assets/img/svg/gray-login.svg" alt="Ícone Login">
+                <img src="assets/img/svg/gray-right-arrow.svg" alt="Seta">
+            </picture>
+        </section>
+
+    </main>
     <footer>
         <div id="footer-contact">
             <div id="social-media">
                 <strong>Contato</strong>
                 <ul>
-                    <li><a href="#"><img src="assets/img/svg/clear-instagram.svg" alt="Instagram" /></li></a> 
-                    <li><a href="#"><img src="assets/img/svg/clear-facebook.svg" alt="Facebook" /></li></a> 
-                    <li><a href="#"><img src="assets/img/svg/clear-pinterest.svg" alt="Pinterest" /></li></a> 
+                    <li><a href="index.html#home"><img src="assets/img/svg/clear-instagram.svg" alt="Instagram" /></li></a> 
+                    <li><a href="index.html#home"><img src="assets/img/svg/clear-facebook.svg" alt="Facebook" /></li></a> 
+                    <li><a href="index.html#home"><img src="assets/img/svg/clear-pinterest.svg" alt="Pinterest" /></li></a> 
                 </ul>
                 <ul>
-                    <li><a href="#"><img src="assets/img/svg/clear-whatsapp.svg" alt="WhatsApp"></a></li>
+                    <li><a href="index.html#home"><img src="assets/img/svg/clear-whatsapp.svg" alt="WhatsApp"></a></li>
                     <li>62 993768974</li>
                 </ul>
                 <strong>design@perfectdesign.com.br</strong>
             </div>
             <div id="perfect-location">
-                <a href="index.html#header"><img src="assets/img/svg/clear-logo.svg" alt="Logo Perfect Design" /></a>
+                <a href="index.html#home"><img src="assets/img/svg/clear-logo.svg" alt="Logo Perfect Design" /></a>
                 <strong>Goiânia - GO</strong>
             </div>
         </div>
         <p>©2023 por Hcode Lab - Red Clan Group</p>
     </footer>
+
+    <script>
+        const btnOpen = document.querySelector('#open-btn');
+          btnOpen.addEventListener('click', e=> {
+            const header = document.querySelector('body');
+            header.classList.toggle('open-menu');
+          }
+        );
+        const btnClose = document.querySelector('#header-menu');
+          btnClose.addEventListener('click', e=> {
+            const header = document.querySelector('body');
+            header.classList.toggle('open-menu');
+          }
+        );
+    </script>
+
 </body>
 </html>

@@ -35,6 +35,12 @@
   font-weight: 400;
 }
 @font-face {
+  font-family: "Montserrat Alternates";
+  src: local("Bold 700"), url("../fonts/MontserratAlternates-bold.ttf"), format("truetype");
+  font-style: italic;
+  font-weight: 700;
+}
+@font-face {
   font-family: "Nunito";
   src: local("Nunito Light"), url("../fonts/Nunito-Light.ttf");
   font-style: italic;
@@ -58,6 +64,12 @@
   font-style: normal;
   font-weight: 600;
 }
+@font-face {
+  font-family: "Nunito";
+  src: local("Nunito Bold"), url("../fonts/Nunito-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
 :root {
   --bg-color: #fff;
   --white: #fff;
@@ -80,7 +92,7 @@
   font-weight: 400;
 }
 
-body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure, picture, hr {
+body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure, picture, hr, label {
   display: flex;
 }
 
@@ -114,6 +126,9 @@ hr.trace {
 #header .overlay {
   display: none;
 }
+#header a #logo {
+  width: 130px;
+}
 #header #open-btn {
   outline: none;
   border: none;
@@ -128,6 +143,8 @@ hr.trace {
   background-color: var(--gray-ef);
   top: -370px;
   right: -320px;
+  padding-bottom: 50px;
+  z-index: 2;
 }
 #header #menu nav ul {
   width: 320px;
@@ -183,20 +200,24 @@ hr.trace {
   right: 0;
 }
 
-#home {
+@media (min-width: 1024px) {
+  header {
+    height: 120px;
+  }
+}
+#projects {
   min-width: 320px;
   width: 100%;
-  height: 100vh;
   background-color: var(--bg-color);
   flex-direction: column;
 }
-#home header {
+#projects #home header {
   min-width: 320px;
   min-height: 768px;
   width: 100%;
   height: 100vh;
   flex-direction: column;
-  background-image: url("../img/webp/img-768-11.webp");
+  background-image: url("../img/webp/img-capa.webp");
   background-size: cover;
   background-position-x: 14%;
   background-position-y: center;
@@ -206,15 +227,15 @@ hr.trace {
   justify-content: flex-end;
   padding: 2em;
 }
-#home header h1 {
+#projects #home header h1 {
   font-family: "Montserrat Alternates";
-  font-size: 24px;
-  color: var(--gray-e4);
-  font-weight: 400;
+  font-size: 30px;
+  color: var(--bg-color);
+  font-weight: 700;
   text-align: center;
-  text-shadow: 0 0.1px 0.1px var(--black);
+  text-shadow: 0 0.2px 0.2px var(--black);
 }
-#home header a {
+#projects #home header a {
   display: flex;
   border: var(--bg-color) solid 1px;
   width: 130px;
@@ -229,12 +250,11 @@ hr.trace {
   cursor: pointer;
   text-decoration: none;
 }
-
-#projects {
+#projects #project-photos {
   flex-direction: column;
   width: 100%;
 }
-#projects h2 {
+#projects #project-photos h2 {
   font-family: "Montserrat Alternates";
   font-size: 24px;
   font-weight: 400;
@@ -246,53 +266,52 @@ hr.trace {
   padding: 0;
   justify-content: center;
 }
-#projects .project-designers {
+#projects #project-photos .project-designers {
   flex-direction: column;
   position: relative;
   margin-bottom: 60px;
 }
-#projects .project-designers picture > img {
+#projects #project-photos .project-designers picture > img {
   width: 100%;
 }
-#projects .project-designers .professional-profile .personal-id {
+#projects #project-photos .project-designers .professional-profile .personal-id {
   width: 35%;
   flex-direction: column;
   margin-left: 10px;
 }
-#projects .project-designers .professional-profile .personal-id strong {
+#projects #project-photos .project-designers .professional-profile .personal-id strong {
   font-family: merienda;
   font-size: 16px;
 }
-#projects .project-designers .professional-profile .personal-id small {
+#projects #project-photos .project-designers .professional-profile .personal-id small {
   font-size: 10px;
 }
-#projects .project-designers .professional-profile #photo {
+#projects #project-photos .project-designers .professional-profile .photo {
   position: absolute;
   right: calc(50% - 42px);
   bottom: 0;
 }
-#projects .project-designers .professional-profile #photo img {
+#projects #project-photos .project-designers .professional-profile .photo img {
   width: 90px;
   height: 90px;
   border: var(--bg-color) solid 5px;
   border-radius: 50%;
 }
-#projects .project-designers .professional-profile #designer-contact {
+#projects #project-photos .project-designers .professional-profile .designer-contact {
   position: absolute;
   right: 15%;
 }
-#projects .project-designers .professional-profile #designer-contact img {
+#projects #project-photos .project-designers .professional-profile .designer-contact img {
   width: 30px;
   height: 30px;
   margin-top: 5px;
   margin-right: 3px;
 }
-
-#products {
+#projects #products {
   flex-direction: column;
   position: relative;
 }
-#products h2 {
+#projects #products h2 {
   font-family: "Montserrat Alternates";
   font-size: 24px;
   font-weight: 400;
@@ -301,12 +320,12 @@ hr.trace {
   color: var(--gray-72);
   margin-top: 0;
 }
-#products #search-products {
+#projects #products #search-products {
   position: relative;
   width: 300px;
   align-self: center;
 }
-#products #search-products #product {
+#projects #products #search-products #product {
   margin: 0;
   padding: 0 10px;
   position: absolute;
@@ -316,13 +335,13 @@ hr.trace {
   left: calc(50% - 150px);
   border: var(--black) solid 1px;
 }
-#products #search-products #magnifier {
+#projects #products #search-products #magnifier {
   position: absolute;
   width: 30px;
   height: 30px;
   right: 0;
 }
-#products p {
+#projects #products p {
   display: flex;
   margin: 40px 0;
   width: 300px;
@@ -334,13 +353,13 @@ hr.trace {
   justify-content: space-between;
   align-self: center;
 }
-#products .product-option {
+#projects #products .product-option {
   width: 98vw;
   justify-content: space-between;
   align-self: center;
   margin: 0 10px;
 }
-#products .product-option a {
+#projects #products .product-option a {
   display: flex;
   width: calc(100% / 3);
   height: 30px;
@@ -356,54 +375,53 @@ hr.trace {
   margin: 5px;
   padding: 0 6px;
 }
-#products .products-navigation {
+#projects #products .products-navigation {
   flex-direction: column;
   position: relative;
   width: 100%;
 }
-#products .products-navigation picture #forniture {
+#projects #products .products-navigation picture #forniture {
   width: 100%;
 }
-#products .products-navigation picture #hearth {
+#projects #products .products-navigation picture #hearth {
   position: absolute;
   bottom: 50px;
   right: 20px;
 }
-#products .products-navigation nav picture img {
+#projects #products .products-navigation nav picture img {
   position: absolute;
   height: 50px;
 }
-#products .products-navigation nav picture img:first-child {
+#projects #products .products-navigation nav picture img:first-child {
   top: calc(50% - 25px);
   right: 20px;
 }
-#products .products-navigation nav picture img:last-child {
+#projects #products .products-navigation nav picture img:last-child {
   position: absolute;
   top: calc(50% - 25px);
   left: 20px;
 }
-#products .products-navigation ul {
+#projects #products .products-navigation ul {
   margin: 0;
   padding: 0;
   justify-content: center;
 }
-#products .products-navigation ul li {
+#projects #products .products-navigation ul li {
   width: 8px;
   height: 8px;
   background-color: var(--gray-f2);
   margin: 5px 2px;
 }
-#products .products-navigation ul li:first-child {
+#projects #products .products-navigation ul li:first-child {
   background-color: var(--gray-72);
 }
-
-#contact {
+#projects #contact {
   align-self: center;
   width: 300px;
   margin: 40px 10px;
   position: relative;
 }
-#contact a {
+#projects #contact a {
   display: flex;
   border: var(--gray-72) solid 1px;
   height: 40px;
@@ -418,18 +436,252 @@ hr.trace {
   cursor: pointer;
   text-decoration: none;
 }
-#contact picture img {
+#projects #contact picture img {
   position: absolute;
 }
-#contact picture img:first-child {
+#projects #contact picture img:first-child {
   left: 20px;
   top: 10px;
 }
-#contact picture img:last-child {
+#projects #contact picture img:last-child {
   right: 20px;
   top: 10px;
 }
 
+@media (min-width: 1024px) {
+  #projects #home header h1 {
+    font-family: "Montserrat Alternates";
+    font-size: 40px;
+    color: var(--bg-color);
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0 0.2px 0.2px var(--black);
+  }
+  #projects #home header a {
+    display: flex;
+    border: var(--bg-color) solid 1px;
+    width: 160px;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--bg-color);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  #projects #project-photos {
+    flex-direction: column;
+    position: relative;
+  }
+  #projects #project-photos h2 {
+    font-family: "Montserrat Alternates";
+    font-size: 24px;
+    font-weight: 400;
+    margin: 40px 0;
+    text-align: center;
+    color: var(--gray-72);
+    font-size: 40px;
+    display: flex;
+    margin: 60px 0;
+    padding: 0;
+    justify-content: center;
+  }
+  #projects #project-photos .project-designers {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  #projects #project-photos .project-designers > picture {
+    justify-content: flex-end;
+    margin-right: 40px;
+  }
+  #projects #project-photos .project-designers > picture > img {
+    align-items: flex-end;
+    width: 80%;
+  }
+  #projects #project-photos .project-designers .professional-profile {
+    flex-direction: column;
+    margin-left: 15px;
+  }
+  #projects #project-photos .project-designers .professional-profile .personal-id {
+    position: absolute;
+    bottom: calc(50% - 90px);
+    width: 35%;
+    flex-direction: column;
+  }
+  #projects #project-photos .project-designers .professional-profile .personal-id strong {
+    font-family: merienda;
+    font-size: 18px;
+  }
+  #projects #project-photos .project-designers .professional-profile .personal-id small {
+    font-size: 12px;
+  }
+  #projects #project-photos .project-designers .professional-profile .photo {
+    top: calc(50% - 60px);
+    left: 130px;
+  }
+  #projects #project-photos .project-designers .professional-profile .photo img {
+    width: 120px;
+    height: 120px;
+    border: var(--bg-color) solid 5px;
+    border-radius: 50%;
+  }
+  #projects #project-photos .project-designers .professional-profile .designer-contact {
+    flex-direction: column;
+    position: absolute;
+    left: 150px;
+    bottom: 40px;
+  }
+  #projects #project-photos .project-designers .professional-profile .designer-contact img {
+    width: 40px;
+    height: 40px;
+    margin-top: 3px;
+    margin-right: 5px;
+  }
+  #projects #products {
+    flex-direction: column;
+    position: relative;
+  }
+  #projects #products h2 {
+    font-family: "Montserrat Alternates";
+    font-size: 24px;
+    font-weight: 400;
+    margin: 40px 0;
+    text-align: center;
+    color: var(--gray-72);
+    font-size: 40px;
+  }
+  #projects #products #search-products {
+    position: relative;
+    width: 500px;
+    height: 40px;
+    align-self: center;
+  }
+  #projects #products #search-products #product {
+    margin: 0;
+    padding: 0 10px;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    left: calc(50% - 250px);
+    border: var(--black) solid 1px;
+  }
+  #projects #products #search-products #magnifier {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+  }
+  #projects #products p {
+    display: flex;
+    margin: 40px 0;
+    width: 400px;
+    font-family: "Montserrat Alternates";
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--gray-72);
+    text-align: center;
+    justify-content: space-between;
+    align-self: center;
+  }
+  #projects #products .product-option {
+    width: 98vw;
+    justify-content: space-between;
+    align-self: center;
+    margin: 0 10px;
+  }
+  #projects #products .product-option a {
+    display: flex;
+    width: calc(100% / 3);
+    height: 30px;
+    align-items: center;
+    background-color: transparent;
+    border: var(--black) solid 1px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--black);
+    margin: 5px;
+    padding: 0 6px;
+  }
+  #projects #products .products-navigation {
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+  #projects #products .products-navigation picture #forniture {
+    width: 100%;
+  }
+  #projects #products .products-navigation picture #hearth {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+  }
+  #projects #products .products-navigation nav picture img {
+    position: absolute;
+    height: 50px;
+  }
+  #projects #products .products-navigation nav picture img:first-child {
+    top: calc(50% - 25px);
+    right: 20px;
+  }
+  #projects #products .products-navigation nav picture img:last-child {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 20px;
+  }
+  #projects #products .products-navigation ul {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  #projects #products .products-navigation ul li {
+    width: 8px;
+    height: 8px;
+    background-color: var(--gray-f2);
+    margin: 5px 2px;
+  }
+  #projects #products .products-navigation ul li:first-child {
+    background-color: var(--gray-72);
+  }
+  #projects #contact {
+    align-self: center;
+    width: 500px;
+    margin: 40px 10px;
+    position: relative;
+  }
+  #projects #contact a {
+    display: flex;
+    border: var(--gray-72) solid 1px;
+    height: 40px;
+    width: 500px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--gray-72);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  #projects #contact picture img {
+    position: absolute;
+  }
+  #projects #contact picture img:first-child {
+    left: 20px;
+    top: 10px;
+  }
+  #projects #contact picture img:last-child {
+    right: 20px;
+    top: 10px;
+  }
+}
 footer {
   min-width: 320px;
   width: 100%;
@@ -439,7 +691,7 @@ footer {
   padding: 10px;
 }
 footer #footer-contact {
-  justify-content: space-be;
+  justify-content: space-between;
   align-items: center;
 }
 footer #footer-contact #social-media {
@@ -468,7 +720,7 @@ footer #footer-contact #perfect-location {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-left: 30px;
+  margin-right: 10px;
 }
 footer #footer-contact #perfect-location strong {
   font-size: 14px;
@@ -484,6 +736,66 @@ footer p {
   text-align: center;
 }
 
+@media (min-width: 1024px) {
+  footer {
+    min-width: 320px;
+    width: 100%;
+    flex-direction: column;
+    height: 300px;
+    background-color: var(--black);
+    padding: 40px;
+  }
+  footer #footer-contact {
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer #footer-contact #social-media {
+    width: 60%;
+    flex-direction: column;
+  }
+  footer #footer-contact #social-media strong {
+    font-size: 32px;
+    margin-bottom: 5px;
+    color: var(--gray-bf);
+  }
+  footer #footer-contact #social-media strong:last-child {
+    font-size: 20px;
+  }
+  footer #footer-contact #social-media ul {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  footer #footer-contact #social-media ul li {
+    color: var(--gray-bf);
+  }
+  footer #footer-contact #social-media ul li a img {
+    width: 40px;
+    margin: 0 10px;
+  }
+  footer #footer-contact #perfect-location {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 10px;
+  }
+  footer #footer-contact #perfect-location a img {
+    width: 270px;
+  }
+  footer #footer-contact #perfect-location strong {
+    font-size: 24px;
+    color: var(--gray-72);
+    margin-left: 35px;
+  }
+  footer p {
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    font-size: 15px;
+    color: var(--gray-bf);
+    text-align: center;
+  }
+}
 #projects {
   flex-direction: column;
   width: 100%;
@@ -597,6 +909,342 @@ footer p {
   font-weight: 300;
   font-size: 14px;
   color: var(--gray-72);
+}
+
+#products {
+  flex-direction: column;
+  width: 100%;
+}
+#products h1 {
+  font-family: "Montserrat Alternates";
+  font-size: 24px;
+  font-weight: 400;
+  margin: 40px 0;
+  text-align: center;
+  color: var(--gray-72);
+  margin-bottom: 10px;
+}
+#products #product-options {
+  width: 98vw;
+  justify-content: center;
+  align-self: center;
+  margin-bottom: 40px;
+}
+#products #product-options a {
+  display: flex;
+  width: calc(55% / 3);
+  height: 30px;
+  background-color: var(--black);
+  border: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 9px;
+  color: var(--gray-ef);
+  text-transform: uppercase;
+}
+#products #product-options a + a {
+  margin-left: 5px;
+}
+#products select {
+  width: 50%;
+  border: var(--gray-72) solid 1px;
+  height: 30px;
+}
+#products .product-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-self: center;
+}
+#products .product-items img {
+  width: 100%;
+}
+
+#single-product {
+  min-width: 320px;
+  width: 100%;
+  flex-direction: column;
+}
+#single-product h1 {
+  margin: 40px 10px 0 10px;
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  color: var(--gray-26);
+  font-size: 24px;
+}
+#single-product h2 {
+  margin: 0 10px;
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  color: var(--gray-72);
+  font-size: 20px;
+}
+#single-product h3 {
+  margin: 10px 10px 40px 10px;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  color: var(--gray-72);
+  font-weight: 400;
+}
+#single-product #item-view #displayed-item {
+  width: 100%;
+  position: relative;
+}
+#single-product #item-view #displayed-item img {
+  width: 100%;
+}
+#single-product #item-view nav picture img {
+  position: absolute;
+  height: 40px;
+}
+#single-product #item-view nav picture img:first-child {
+  top: calc(50% - 25px);
+  right: 20px;
+}
+#single-product #item-view nav picture img:last-child {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: 20px;
+}
+#single-product ul {
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+#single-product ul li {
+  width: 8px;
+  height: 8px;
+  background-color: var(--gray-e4);
+}
+#single-product ul li:first-child {
+  background-color: var(--gray-bf);
+}
+#single-product ul li + li {
+  margin-left: 5px;
+}
+#single-product #add-product {
+  margin-top: 40px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+#single-product #add-product #order-item {
+  position: relative;
+  width: 70%;
+}
+#single-product #add-product #order-item label {
+  width: 100%;
+  color: var(--gray-72);
+  align-items: center;
+  padding-left: 5px;
+}
+#single-product #add-product #order-item label:first-child {
+  height: 30px;
+  background-color: var(--black);
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--gray-e4);
+  border: var(--gray-26) solid 2px;
+}
+#single-product #add-product #order-item #choice {
+  position: absolute;
+  right: 3px;
+  top: 5px;
+}
+#single-product #add-product #qtty-order {
+  margin-right: 10px;
+}
+#single-product #add-product #qtty-order label {
+  color: var(--gray-72);
+  margin-right: 5px;
+  height: 30px;
+  align-items: center;
+  margin: 5;
+}
+#single-product #add-product #qtty-order #item-qtty {
+  width: 30px;
+  border: var(--gray-72) solid 1px;
+  text-align: right;
+  padding-right: 5px;
+  color: var(--gray-72);
+  font-weight: 600;
+}
+#single-product p {
+  font-family: "Montserrat Alternates";
+  font-size: 12;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+#single-product p:last-child {
+  text-align: justify;
+  margin: 20px 10px;
+  font-family: "Nunito";
+  font-size: 12;
+  color: var(--black);
+}
+#single-product h2 {
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  margin-top: 40px;
+}
+
+#auth {
+  min-width: 320px;
+  width: 100%;
+  flex-direction: column;
+}
+#auth section form {
+  width: 100%;
+  margin: 10px;
+}
+#auth section form:last-child {
+  margin-bottom: 40px;
+}
+#auth section form h1 {
+  font-family: "Montserrat Alternates";
+  font-size: 24px;
+  font-weight: 400;
+  margin: 40px 0;
+  text-align: center;
+  color: var(--gray-72);
+}
+#auth section form .field {
+  position: relative;
+  margin-top: 10px;
+}
+#auth section form .field input {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  padding: 0;
+  border: var(--gray-72) solid 1px;
+}
+#auth section form .field label {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-family: "Nunito";
+  font-size: 10px;
+  text-transform: uppercase;
+}
+#auth section form .auth-opt {
+  align-items: flex-end;
+  margin-top: 0;
+}
+#auth section form .auth-opt > input {
+  border: var(--gray-72) 1px solid;
+}
+#auth section form .auth-opt > label {
+  font-family: "Nunito";
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--gray-72);
+  margin-right: 3px;
+}
+#auth section form .auth-opt > label a {
+  text-decoration: none;
+  color: var(--gray-72);
+}
+#auth section form .action {
+  margin-top: 20px;
+  width: 100%;
+}
+#auth section form .action a {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+  font-family: "Nunito";
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--gray-e4);
+  text-decoration: none;
+}
+#auth section form h2 {
+  font-family: "Montserrat Alternates";
+  font-size: 24px;
+  font-weight: 400;
+  margin: 40px 0;
+  text-align: center;
+  color: var(--gray-72);
+}
+#auth section form .client-type {
+  justify-content: space-around;
+}
+#auth section form #cep-uf {
+  justify-content: space-between;
+}
+
+#order {
+  min-width: 320px;
+  width: 100%;
+  flex-direction: column;
+}
+#order #client, #order #product-order {
+  flex-direction: column;
+  margin: 0 10px;
+}
+#order #client h1, #order #product-order h1 {
+  font-family: "Montserrat Alternates";
+  font-size: 24px;
+  font-weight: 400;
+  margin: 40px 0;
+  text-align: center;
+  color: var(--gray-72);
+}
+#order #client .order-id, #order #product-order .order-id {
+  margin-top: 15px;
+  flex-direction: column;
+}
+#order #client .order-id strong, #order #client .order-id small, #order #product-order .order-id strong, #order #product-order .order-id small {
+  font-family: "Nunito";
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--black);
+}
+#order #client #news-opt, #order #product-order #news-opt {
+  margin-top: 10px;
+}
+#order #client #news-opt input, #order #product-order #news-opt input {
+  margin: 0;
+  padding: 0;
+}
+#order #client #news-opt label, #order #product-order #news-opt label {
+  font-family: "Nunito";
+  font-size: 12px;
+  margin-left: 3px;
+  align-items: flex-end;
+}
+#order #client h2, #order #product-order h2 {
+  font-family: "Nunito";
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+#order #product-order .order-id small {
+  font-weight: 700;
+}
+#order #product-order a {
+  height: 30px;
+  display: flex;
+  background-color: var(--black);
+  margin-top: 20px;
+  margin-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  color: var(--gray-e4);
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */

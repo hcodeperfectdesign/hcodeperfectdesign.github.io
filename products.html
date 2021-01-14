@@ -19,9 +19,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/vetor/favicon-16x16.png" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="msapplication-TileColor" content="#EFEFEF" />
+    <meta name="msapplication-TileImage" content="assets/img/vetor/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#EFEFEF" />
+    <meta name="description" content="A Perfect Design traz a natureza para dentro da sua casa" />
 </head>
 <body>
     <header id="header">
@@ -31,61 +32,135 @@
             <img src="assets/img/svg/btn-menu.svg" alt="Icone Menu" />
         </button>
         <div id="menu">
-            <ul>
-                <div id="header-menu">
-                        <li><a href="index.html#header"><img src="assets/img/svg/gray-left-arrow.svg" alt="Seta esquerda" /></a></li>
+            <nav>
+                <ul>
+                    <div id="header-menu">
+                        <li><a href="index.html#header"><img src="assets/img/svg/leftgray-arrow.svg" alt="Seta esquerda" /></a></li>
                         <li><a href="index.html#header">Página Inicial</a></li>
                         <li><a href="index.html#header"><img src="assets/img/svg/logo-02.svg" alt="Logo P" /></a></li>
-                </div>
-                <div class="divider"><hr /></div>
-                <div class="items-menu">
-                    <li><a href="projects.html">Projetos</a></li>
-                    <li><a href="projects.html"><img src="assets/img/svg/gray-right-arrow.svg" alt=""></a></li>
-                </div>
-                <div class="items-menu">
-                    <li><a href="designers.html">Designers</a></li>
-                    <li><a href="designers.html"><img src="assets/img/svg/gray-right-arrow.svg" alt=""></a></li>
-                </div>
-                <div class="items-menu">
-                    <li><a href="products.html">Produtos</a></li>
-                    <li><a href="products.html"><img src="assets/img/svg/gray-right-arrow.svg" alt=""></a></li>
-                </div>
-                <div class="divider"><hr /></div>
-                <div class="items-menu">
-                    <li><a href="auth.html">Minha Conta</a></li>
-                    <li><a href="auth.html"><img src="assets/img/svg/gray-login.svg" alt=""></a></li>
-                </div>
-                <div class="items-menu">
-                    <li><a href="orders.html">Meus Pedidos</a></li>
-                    <li><a href="orders.html"><img src="assets/img/svg/order.svg" alt=""></a></li>
-                </div>
-            </ul>
+                    </div>
+                    <div class="divider"><hr /></div>
+                    <div class="items-menu">
+                        <li><a href="projects.html">Projetos</a></li>
+                        <li><a href="projects.html"><img src="assets/img/svg/rightgray-arrow.svg" alt=""></a></li>
+                    </div>
+                    <div class="items-menu">
+                        <li><a href="designers.html">Designers</a></li>
+                        <li><a href="designers.html"><img src="assets/img/svg/rightgray-arrow.svg" alt=""></a></li>
+                    </div>
+                    <div class="items-menu">
+                        <li><a href="products.html">Produtos</a></li>
+                        <li><a href="products.html"><img src="assets/img/svg/rightgray-arrow.svg" alt=""></a></li>
+                    </div>
+                    <div class="divider"><hr /></div>
+                    <div class="items-menu">
+                        <li><a href="auth.html">Minha Conta</a></li>
+                        <li><a href="auth.html"><img src="assets/img/svg/gray-login.svg" alt=""></a></li>
+                    </div>
+                    <div class="items-menu">
+                        <li><a href="orders.html">Meus Pedidos</a></li>
+                        <li><a href="orders.html"><img src="assets/img/svg/order.svg" alt=""></a></li>
+                    </div>
+                </ul>
+            </nav>
         </div>
     </header>
-    <div id="home">
-
-    </div>
-    <div id="footer">
+    <section id="products">
+        <h1>Conheça nossos produtos</h1>
+        <div id="product-options">
+            <a href="products.html">Móveis</a>
+            <a href="products.html">Acessórios</a>
+            <a href="products.html">Iluminação</a>
+        </div>
+        <select name="products-index" id="products-index">
+            <option value="">Ordenar por</option>
+            <option value="1">Móveis</option>
+            <option value="2">Acessórios</option>
+            <option value="3">Iluminação</option>
+        </select>
+        <picture class="product-items">
+            <img src="assets/img/webp/aparador-aereo-sistema-elle.webp" alt="Aparador sistema elle">
+            <img src="assets/img/webp/aparador-alva-aereo.webp" alt="Aparador Alva">
+            <img src="assets/img/webp/aparador-bizzet.webp" alt="Aparador Bizzet">
+            <img src="assets/img/webp/aparador-caetano.webp" alt="Aparador Caetano">
+            <img src="assets/img/webp/arandela-bay.webp" alt="Arandela Bay">
+            <img src="assets/img/webp/arandela-cilinder.webp" alt="Arandela Cilinder">
+            <img src="assets/img/webp/bandeja-com-abas.webp" alt="Bandeja com abas">
+            <img src="assets/img/webp/bandeja-open-retangular.webp" alt="Bandeja open retangular">
+        </picture>
+            <!-- <strong>Aparador Aereo Sistema Elle</strong>
+        <div class="product-items">
+            <picture>
+                <img src="assets/img/svg/outline-heart.svg" alt="Coração">
+            </picture>
+            <strong>Aparador Aéreo Alva</strong>
+        <div class="product-items">
+            <picture>
+                <img src="assets/img/svg/outline-heart.svg" alt="Coração">
+            </picture>
+            <strong>Aparador Bizzet</strong>
+        <div class="product-items">
+            <picture>
+                <img src="assets/img/svg/outline-heart.svg" alt="Coração">
+            </picture>
+            <strong>Aparador Caetano</strong>
+        <div class="product-items">
+            <picture>
+                <img src="assets/img/svg/outline-heart.svg" alt="Coração">
+            </picture>
+            <strong>Arandela Bay</strong>
+        <div class="product-items">
+            <picture>
+                <img src="assets/img/svg/outline-heart.svg" alt="Coração">
+            </picture>
+            <strong>Arandela Cilinder</strong>
+        <div class="product-items">
+            <picture>
+                <img src="assets/img/svg/outline-heart.svg" alt="Coração">
+            </picture>
+            <strong>Bandeja com abas</strong>
+        <div class="product-items">
+            <picture>
+                <img src="assets/img/svg/outline-heart.svg" alt="Coração">
+            </picture>
+            <strong>Bandeja Open</strong> -->
+    </section>
+    <footer>
         <div id="footer-contact">
             <div id="social-media">
                 <strong>Contato</strong>
                 <ul>
-                    <li><a href="#"><img src="assets/img/svg/clear-instagram.svg" alt="Instagram" /></li></a> 
-                    <li><a href="#"><img src="assets/img/svg/clear-facebook.svg" alt="Facebook" /></li></a> 
-                    <li><a href="#"><img src="assets/img/svg/clear-pinterest.svg" alt="Pinterest" /></li></a> 
+                    <li><a href="index.html#home"><img src="assets/img/svg/clear-instagram.svg" alt="Instagram" /></li></a> 
+                    <li><a href="index.html#home"><img src="assets/img/svg/clear-facebook.svg" alt="Facebook" /></li></a> 
+                    <li><a href="index.html#home"><img src="assets/img/svg/clear-pinterest.svg" alt="Pinterest" /></li></a> 
                 </ul>
                 <ul>
-                    <li><a href="#"><img src="assets/img/svg/clear-whatsapp.svg" alt="WhatsApp"></a></li>
+                    <li><a href="index.html#home"><img src="assets/img/svg/clear-whatsapp.svg" alt="WhatsApp"></a></li>
                     <li>62 993768974</li>
                 </ul>
                 <strong>design@perfectdesign.com.br</strong>
             </div>
             <div id="perfect-location">
-                <a href="index.html#header"><img src="assets/img/svg/clear-logo.svg" alt="Logo Perfect Design" /></a>
+                <a href="index.html#home"><img src="assets/img/svg/clear-logo.svg" alt="Logo Perfect Design" /></a>
                 <strong>Goiânia - GO</strong>
             </div>
         </div>
         <p>©2023 por Hcode Lab - Red Clan Group</p>
-    </div>
+    </footer>
+
+    <script>
+        const btnOpen = document.querySelector('#open-btn');
+          btnOpen.addEventListener('click', e=> {
+            const header = document.querySelector('body');
+            header.classList.toggle('open-menu');
+          }
+        );
+        const btnClose = document.querySelector('#header-menu');
+          btnClose.addEventListener('click', e=> {
+            const header = document.querySelector('body');
+            header.classList.toggle('open-menu');
+          }
+        );
+    </script>
 </body>
 </html>

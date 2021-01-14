@@ -114,12 +114,12 @@
             <div id="social-media">
                 <strong>Contato</strong>
                 <ul>
-                    <li><a href="#"><img src="assets/img/svg/clear-instagram.svg" alt="Instagram" /></li></a> 
-                    <li><a href="#"><img src="assets/img/svg/clear-facebook.svg" alt="Facebook" /></li></a> 
-                    <li><a href="#"><img src="assets/img/svg/clear-pinterest.svg" alt="Pinterest" /></li></a> 
+                    <li><a href="index.html#home"><img src="assets/img/svg/clear-instagram.svg" alt="Instagram" /></li></a> 
+                    <li><a href="index.html#home"><img src="assets/img/svg/clear-facebook.svg" alt="Facebook" /></li></a> 
+                    <li><a href="index.html#home"><img src="assets/img/svg/clear-pinterest.svg" alt="Pinterest" /></li></a> 
                 </ul>
                 <ul>
-                    <li><a href="#"><img src="assets/img/svg/clear-whatsapp.svg" alt="WhatsApp"></a></li>
+                    <li><a href="index.html#home"><img src="assets/img/svg/clear-whatsapp.svg" alt="WhatsApp"></a></li>
                     <li>62 993768974</li>
                 </ul>
                 <strong>design@perfectdesign.com.br</strong>
@@ -131,5 +131,20 @@
         </div>
         <p>©2023 por Hcode Lab - Red Clan Group</p>
     </footer>
+
+    <script>
+        const btnOpen = document.querySelector('#open-btn');
+          btnOpen.addEventListener('click', e=> {
+            const header = document.querySelector('body');
+            header.classList.toggle('open-menu');
+          }
+        );
+        const btnClose = document.querySelector('#header-menu');
+          btnClose.addEventListener('click', e=> {
+            const header = document.querySelector('body');
+            header.classList.toggle('open-menu');
+          }
+        );
+    </script>
 </body>
 </html>

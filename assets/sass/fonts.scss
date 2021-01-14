@@ -39,6 +39,12 @@
     font-style: italic;
     font-weight: 400;
 }
+@font-face {
+    font-family: 'Montserrat Alternates';
+    src: local('Bold 700'), url('../fonts/MontserratAlternates-bold.ttf'), format('truetype');
+    font-style: italic;
+    font-weight: 700;
+}
 
 @font-face {
     font-family: 'Nunito';
@@ -65,4 +71,10 @@
     src: local('Nunito SemiBold'), url('../fonts/Nunito-SemiBold.ttf');
     font-style: normal;
     font-weight: 600;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: local('Nunito Bold'), url('../fonts/Nunito-Bold.ttf');
+    font-style: normal;
+    font-weight: 700;
 }
