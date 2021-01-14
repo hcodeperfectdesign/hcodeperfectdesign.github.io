@@ -204,6 +204,9 @@ hr.trace {
   #header {
     height: 120px;
   }
+  #header a #logo {
+    width: 200px;
+  }
   #header #menu {
     width: 560px;
     height: 768px;

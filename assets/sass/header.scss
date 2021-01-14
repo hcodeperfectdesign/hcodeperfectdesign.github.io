@@ -92,8 +92,13 @@
 @media (min-width: 1024px) {
     #header {
         height: 120px;
+        a {
+            #logo {
+                width: 200px;
+                // height: 87px;
+            }
+        }
         #menu {
-            
             width: 560px;
             height: 768px;
             top: -560px;
