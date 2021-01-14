@@ -1,0 +1,82 @@
+#auth {
+    min-width: 320px;
+    width: 100%;
+    flex-direction: column;
+    section {
+        form {
+            width: 100%;
+            margin: 10px;
+            &:last-child {
+                margin-bottom: 40px;
+            }
+            h1 {
+                @include title;
+            }
+            .field {
+                position: relative;
+                margin-top: 10px;
+                input {
+                    width: 100%;
+                    height: 40px;
+                    border: 0;
+                    padding: 0;
+                    border: var(--gray-72) solid 1px;
+                }
+                label {
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    font-family: 'Nunito';
+                    font-size: 10px;
+                    text-transform: uppercase;
+                }
+            }
+            .auth-opt {
+                align-items: flex-end;
+                margin-top: 0;
+                > input {
+                    border: var(--gray-72) 1px solid;
+                }
+                > label {
+                    font-family: 'Nunito';
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: var(--gray-72);
+                    margin-right: 3px;
+                    a {
+                        text-decoration: none;
+                        color: var(--gray-72);
+                    }
+                }
+            }
+            .action {
+                margin-top: 20px;
+                width: 100%;
+                a {
+                    display: flex;
+                    width: 100%;
+                    height: 30px;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: var(--black);
+                    font-family: 'Nunito';
+                    font-weight: 600;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: var(--gray-e4);
+                    text-decoration: none;
+                }
+            }
+            h2 {
+                @include title;
+            }
+            .client-type {
+                justify-content: space-around;
+
+            }
+            #cep-uf {
+                justify-content: space-between;
+            }
+        }
+    }
+}

@@ -19,9 +19,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/vetor/favicon-16x16.png" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="msapplication-TileColor" content="#EFEFEF" />
+    <meta name="msapplication-TileImage" content="assets/img/vetor/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#EFEFEF" />
+    <meta name="description" content="A Perfect Design traz a natureza para dentro da sua casa" />
 </head>
 <body>
     <header id="header">
@@ -31,61 +32,121 @@
             <img src="assets/img/svg/btn-menu.svg" alt="Icone Menu" />
         </button>
         <div id="menu">
-            <ul>
-                <div id="header-menu">
-                        <li><a href="index.html#header"><img src="assets/img/svg/gray-left-arrow.svg" alt="Seta esquerda" /></a></li>
+            <nav>
+                <ul>
+                    <div id="header-menu">
+                        <li><a href="index.html#header"><img src="assets/img/svg/leftgray-arrow.svg" alt="Seta esquerda" /></a></li>
                         <li><a href="index.html#header">Página Inicial</a></li>
                         <li><a href="index.html#header"><img src="assets/img/svg/logo-02.svg" alt="Logo P" /></a></li>
-                </div>
-                <div class="divider"><hr /></div>
-                <div class="items-menu">
-                    <li><a href="projects.html">Projetos</a></li>
-                    <li><a href="projects.html"><img src="assets/img/svg/gray-right-arrow.svg" alt=""></a></li>
-                </div>
-                <div class="items-menu">
-                    <li><a href="designers.html">Designers</a></li>
-                    <li><a href="designers.html"><img src="assets/img/svg/gray-right-arrow.svg" alt=""></a></li>
-                </div>
-                <div class="items-menu">
-                    <li><a href="products.html">Produtos</a></li>
-                    <li><a href="products.html"><img src="assets/img/svg/gray-right-arrow.svg" alt=""></a></li>
-                </div>
-                <div class="divider"><hr /></div>
-                <div class="items-menu">
-                    <li><a href="auth.html">Minha Conta</a></li>
-                    <li><a href="auth.html"><img src="assets/img/svg/gray-login.svg" alt=""></a></li>
-                </div>
-                <div class="items-menu">
-                    <li><a href="orders.html">Meus Pedidos</a></li>
-                    <li><a href="orders.html"><img src="assets/img/svg/order.svg" alt=""></a></li>
-                </div>
-            </ul>
+                    </div>
+                    <div class="divider"><hr /></div>
+                    <div class="items-menu">
+                        <li><a href="projects.html">Projetos</a></li>
+                        <li><a href="projects.html"><img src="assets/img/svg/rightgray-arrow.svg" alt=""></a></li>
+                    </div>
+                    <div class="items-menu">
+                        <li><a href="designers.html">Designers</a></li>
+                        <li><a href="designers.html"><img src="assets/img/svg/rightgray-arrow.svg" alt=""></a></li>
+                    </div>
+                    <div class="items-menu">
+                        <li><a href="products.html">Produtos</a></li>
+                        <li><a href="products.html"><img src="assets/img/svg/rightgray-arrow.svg" alt=""></a></li>
+                    </div>
+                    <div class="divider"><hr /></div>
+                    <div class="items-menu">
+                        <li><a href="auth.html">Minha Conta</a></li>
+                        <li><a href="auth.html"><img src="assets/img/svg/gray-login.svg" alt=""></a></li>
+                    </div>
+                    <div class="items-menu">
+                        <li><a href="orders.html">Meus Pedidos</a></li>
+                        <li><a href="orders.html"><img src="assets/img/svg/order.svg" alt=""></a></li>
+                    </div>
+                </ul>
+            </nav>
         </div>
     </header>
-    <div id="home">
-
-    </div>
-    <div id="footer">
+    <main id="order">
+        <section id="client">
+            <h1>Pedido</h1>
+            <div class="order-id">
+                <strong>Cliente</strong>
+                <small>Jovair Ribeiro</small>
+            </div>
+            <div class="order-id">
+                <strong>E-mail</strong>
+                <small>jvr_ribeiro@live.com</small>
+            </div>
+            <div id="news-opt">
+                <input type="checkbox" name="news" id="news" />
+                <label for="news">Quero receber novidades e ofertas da Perfect Design</label>
+            </div>
+            <h2>Endereço para entrega</h2>
+            <div class="order-id">
+                <small>Av. das Palmeras, 1000, Apto 555, Setor Marista, CEP 74900-000, Goiânia - GO</small>
+            </div>
+        </section>
+        <section id="product-order">
+            <h2>Itens do pedido</h2>
+            <div class="order-id">
+                <strong>Código</strong>
+                <small>A5930</small>
+            </div>
+            <div class="order-id">
+                <strong>Descrição</strong>
+                <small>Aarador aéreo em elle</small>
+            </div>
+            <div class="order-id">
+                <strong>Qtd.</strong>
+                <small>1</small>
+            </div>
+            <div class="order-id">
+                <strong>Valor</strong>
+                <small>R$ 5.930,00</small>
+            </div>
+            <div class="order-id">
+                <strong>Valor total do pedido</strong>
+                <small>R$ 5.930,00</small>
+            </div>
+            <a href="orders.html">Finalizar</a>
+        </section>
+    </main>
+    <footer>
         <div id="footer-contact">
             <div id="social-media">
                 <strong>Contato</strong>
                 <ul>
-                    <li><a href="#"><img src="assets/img/svg/clear-instagram.svg" alt="Instagram" /></li></a> 
-                    <li><a href="#"><img src="assets/img/svg/clear-facebook.svg" alt="Facebook" /></li></a> 
-                    <li><a href="#"><img src="assets/img/svg/clear-pinterest.svg" alt="Pinterest" /></li></a> 
+                    <li><a href="index.html#home"><img src="assets/img/svg/clear-instagram.svg" alt="Instagram" /></li></a> 
+                    <li><a href="index.html#home"><img src="assets/img/svg/clear-facebook.svg" alt="Facebook" /></li></a> 
+                    <li><a href="index.html#home"><img src="assets/img/svg/clear-pinterest.svg" alt="Pinterest" /></li></a> 
                 </ul>
                 <ul>
-                    <li><a href="#"><img src="assets/img/svg/clear-whatsapp.svg" alt="WhatsApp"></a></li>
+                    <li><a href="index.html#home"><img src="assets/img/svg/clear-whatsapp.svg" alt="WhatsApp"></a></li>
                     <li>62 993768974</li>
                 </ul>
                 <strong>design@perfectdesign.com.br</strong>
             </div>
             <div id="perfect-location">
-                <a href="index.html#header"><img src="assets/img/svg/clear-logo.svg" alt="Logo Perfect Design" /></a>
+                <a href="index.html#home"><img src="assets/img/svg/clear-logo.svg" alt="Logo Perfect Design" /></a>
                 <strong>Goiânia - GO</strong>
             </div>
         </div>
         <p>©2023 por Hcode Lab - Red Clan Group</p>
-    </div>
+    </footer>
+
+    <script>
+        const btnOpen = document.querySelector('#open-btn');
+          btnOpen.addEventListener('click', e=> {
+            const header = document.querySelector('body');
+            header.classList.toggle('open-menu');
+          }
+        );
+        const btnClose = document.querySelector('#header-menu');
+          btnClose.addEventListener('click', e=> {
+            const header = document.querySelector('body');
+            header.classList.toggle('open-menu');
+          }
+        );
+    </script>
+
 </body>
 </html>

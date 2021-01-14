@@ -19,9 +19,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/vetor/favicon-16x16.png" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="msapplication-TileColor" content="#EFEFEF" />
+    <meta name="msapplication-TileImage" content="assets/img/vetor/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#EFEFEF" />
+    <meta name="description" content="A Perfect Design traz a natureza para dentro da sua casa" />
 </head>
 <body>
     <header id="header">
@@ -31,51 +32,165 @@
             <img src="assets/img/svg/btn-menu.svg" alt="Icone Menu" />
         </button>
         <div id="menu">
-            <ul>
-                <div id="header-menu">
-                        <li><a href="index.html#header"><img src="assets/img/svg/gray-left-arrow.svg" alt="Seta esquerda" /></a></li>
+            <nav>
+                <ul>
+                    <div id="header-menu">
+                        <li><a href="index.html#header"><img src="assets/img/svg/leftgray-arrow.svg" alt="Seta esquerda" /></a></li>
                         <li><a href="index.html#header">Página Inicial</a></li>
                         <li><a href="index.html#header"><img src="assets/img/svg/logo-02.svg" alt="Logo P" /></a></li>
-                </div>
-                <div class="divider"><hr /></div>
-                <div class="items-menu">
-                    <li><a href="projects.html">Projetos</a></li>
-                    <li><a href="projects.html"><img src="assets/img/svg/gray-right-arrow.svg" alt=""></a></li>
-                </div>
-                <div class="items-menu">
-                    <li><a href="designers.html">Designers</a></li>
-                    <li><a href="designers.html"><img src="assets/img/svg/gray-right-arrow.svg" alt=""></a></li>
-                </div>
-                <div class="items-menu">
-                    <li><a href="products.html">Produtos</a></li>
-                    <li><a href="products.html"><img src="assets/img/svg/gray-right-arrow.svg" alt=""></a></li>
-                </div>
-                <div class="divider"><hr /></div>
-                <div class="items-menu">
-                    <li><a href="auth.html">Minha Conta</a></li>
-                    <li><a href="auth.html"><img src="assets/img/svg/gray-login.svg" alt=""></a></li>
-                </div>
-                <div class="items-menu">
-                    <li><a href="orders.html">Meus Pedidos</a></li>
-                    <li><a href="orders.html"><img src="assets/img/svg/order.svg" alt=""></a></li>
-                </div>
-            </ul>
+                    </div>
+                    <div class="divider"><hr /></div>
+                    <div class="items-menu">
+                        <li><a href="projects.html">Projetos</a></li>
+                        <li><a href="projects.html"><img src="assets/img/svg/rightgray-arrow.svg" alt=""></a></li>
+                    </div>
+                    <div class="items-menu">
+                        <li><a href="designers.html">Designers</a></li>
+                        <li><a href="designers.html"><img src="assets/img/svg/rightgray-arrow.svg" alt=""></a></li>
+                    </div>
+                    <div class="items-menu">
+                        <li><a href="products.html">Produtos</a></li>
+                        <li><a href="products.html"><img src="assets/img/svg/rightgray-arrow.svg" alt=""></a></li>
+                    </div>
+                    <div class="divider"><hr /></div>
+                    <div class="items-menu">
+                        <li><a href="auth.html">Minha Conta</a></li>
+                        <li><a href="auth.html"><img src="assets/img/svg/gray-login.svg" alt=""></a></li>
+                    </div>
+                    <div class="items-menu">
+                        <li><a href="orders.html">Meus Pedidos</a></li>
+                        <li><a href="orders.html"><img src="assets/img/svg/order.svg" alt=""></a></li>
+                    </div>
+                </ul>
+            </nav>
         </div>
     </header>
-    <div id="home">
+    <main id="auth">
+        <section>
+            <form >
+                <h1>Sou cadastrado</h1>
+                <div class="field">
+                    <input type="email" name="email" id="email" />
+                    <label for="email">*E-mail</label>
+                </div>
+                <div class="field">
+                    <input type="password" name="password" id="password" />
+                    <label for="password">*Senha</label>
+                </div>
+                <div class="auth-opt">
+                    <input type="checkbox" name="password-forget" id="password-forget" />
+                    <label for="password-forget">Esqueci <a href="auth.html">minha senha</a></label>
+                </div>
+                <div class="action">
+                    <a href="auth.html">Entrar</a>
+                </div>
+                <div class="auth-opt">
+                    <input type="checkbox" name="remember" id="remember" />
+                    <label for="remember">Lembrar login</label>
+                </div>
+            </form>
+        </section>
+        <section>
+            <form>
+                <h2>Quero me cadastrar</h2>
+                <div class="client-type">
+                    <div>
+                        <input type="radio" name="personal" id="personal" />
+                        <label for="personal">Pessoa Física</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="company" id="company" />
+                        <label for="company">Pessoa Física</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <input type="text" name="profession" id="profession" />
+                    <label for="profession">*E-mail</label>
+                </div>
+                <div class="field">
+                    <input type="text" name="document" id="document" />
+                    <label for="document">*CPF</label>
+                </div>
+                <div class="field">
+                    <input type="tel" name="telefone" id="telefone" />
+                    <label for="telefone">*Telefone</label>
+                </div>
+                <div class="field">
+                    <input type="email" name="email" id="email" />
+                    <label for="email">E-mail</label>
+                </div>
+                <div id="cep-uf">
+                    <div class="field">
+                        <input type="text" name="cep" id="cep" />
+                        <label for="cep">CEP</label>
+                    </div>
+                    <div class="field">
+                        <select id="estado" name="estado" >
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO" selected>Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="EX">Estrangeiro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field">
+                    <input type="text" name="city" id="city" />
+                    <label for="city">Cidade</label>
+                </div>
+                <div class="field">
+                    <input type="text" name="name" id="name" />
+                    <label for="name">Endereço</label>
+                </div>
+                <div class="field">
+                    <input type="text" name="addres" id="addres" />
+                    <label for="addres">*Senha</label>
+                </div>
+                <div class="field">
+                    <input type="password" name="password" id="password" />
+                    <label for="password">*Confirmação de Senha</label>
+                </div>
+                <div class="action">
+                    <a href="auth.html">Registrar</a>
+                </div>
 
-    </div>
-    <div id="footer">
+            </form>
+        </section>
+    </main>
+    <footer>
         <div id="footer-contact">
             <div id="social-media">
                 <strong>Contato</strong>
                 <ul>
-                    <li><a href="#"><img src="assets/img/svg/clear-instagram.svg" alt="Instagram" /></li></a> 
-                    <li><a href="#"><img src="assets/img/svg/clear-facebook.svg" alt="Facebook" /></li></a> 
-                    <li><a href="#"><img src="assets/img/svg/clear-pinterest.svg" alt="Pinterest" /></li></a> 
+                    <li><a href="index.html#home"><img src="assets/img/svg/clear-instagram.svg" alt="Instagram" /></li></a> 
+                    <li><a href="index.html#home"><img src="assets/img/svg/clear-facebook.svg" alt="Facebook" /></li></a> 
+                    <li><a href="index.html#home"><img src="assets/img/svg/clear-pinterest.svg" alt="Pinterest" /></li></a> 
                 </ul>
                 <ul>
-                    <li><a href="#"><img src="assets/img/svg/clear-whatsapp.svg" alt="WhatsApp"></a></li>
+                    <li><a href="index.html#home"><img src="assets/img/svg/clear-whatsapp.svg" alt="WhatsApp"></a></li>
                     <li>62 993768974</li>
                 </ul>
                 <strong>design@perfectdesign.com.br</strong>
@@ -86,6 +201,21 @@
             </div>
         </div>
         <p>©2023 por Hcode Lab - Red Clan Group</p>
-    </div>
+    </footer>
+
+    <script>
+        const btnOpen = document.querySelector('#open-btn');
+          btnOpen.addEventListener('click', e=> {
+            const header = document.querySelector('body');
+            header.classList.toggle('open-menu');
+          }
+        );
+        const btnClose = document.querySelector('#header-menu');
+          btnClose.addEventListener('click', e=> {
+            const header = document.querySelector('body');
+            header.classList.toggle('open-menu');
+          }
+        );
+    </script>
 </body>
 </html>

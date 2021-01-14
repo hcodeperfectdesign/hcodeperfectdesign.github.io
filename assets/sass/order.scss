@@ -1,0 +1,63 @@
+#order {
+    min-width: 320px;
+    width: 100%;
+    flex-direction: column;
+    #client, #product-order {
+        flex-direction: column;
+        margin: 0 10px;
+        h1 {
+            @include title;
+        }
+        .order-id {
+            margin-top: 15px;
+            flex-direction: column;
+            strong, small {
+                font-family: 'Nunito';
+                font-size: 10px;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: var(--black);
+            }
+        }
+        #news-opt {
+            margin-top: 10px;
+            & input {
+                margin: 0;
+                padding: 0;
+            }
+            & label {
+                font-family: 'Nunito';
+                font-size: 12px;
+                margin-left: 3px;
+                align-items: flex-end;
+            }
+        }
+        h2 {
+            font-family: 'Nunito';
+            font-size: 12px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+    }
+    #product-order {
+        .order-id {
+            small {
+                font-weight: 700;
+            }
+        }
+        a {
+            height: 30px;
+            display: flex;
+            background-color: var(--black);
+            margin-top: 20px;
+            margin-bottom: 40px;
+            justify-content: center;
+            align-items: center;
+            color: var(--gray-e4);
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+}
