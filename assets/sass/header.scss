@@ -3,6 +3,7 @@
     width: 100%;
     height: 100px;
     background-color: var(--gray-ef);
+    position: relative;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -11,19 +12,26 @@
     }
     a {
         #logo {
+            position: absolute;
+            left: 10px;
+            top: 22px;
             width: 130px;
+            transition: left .5s ease-in-out;
         }
     }
-    #open-btn {
+    #open-btn, #close-btn {
         outline: none;
         border: none;
-        margin-right: 10px;
+        z-index: 3;
+    }
+    #close-btn {
+        display: none;
     }
     #menu {
         flex-direction: column;
         transition: all .5s ease-in-out;
         width: 320px;
-        height: 370px;
+        height: 400px;
         position: absolute;
         background-color: var(--gray-ef);
         top: -370px;
@@ -33,38 +41,36 @@
         nav {
             ul {
                 width: 320px;
-                margin: 10px;
+                margin-top: 90px;
                 padding: 0;
                 flex-direction: column;
-                text-transform: uppercase;
-                text-decoration: none;
-                #header-menu {
+                li {
+                    flex-direction: row;
+                    justify-content: center;
+                    margin-bottom: 20px;
                     align-items: center;
-                    justify-content: space-between;
+                    a {
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        text-decoration: none;
+                        color: var(--gray-72);
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
+                }
+                div {
+                    flex-direction: column;
                     li {
-                        justify-content: space-between;
-                        a {
-                            text-decoration: none;
-                            color: var(--black-26);
-                            font-weight: 600;
-                            font-size: 16px;
+                        &:first-child {
+                            margin-bottom: 20px;
                         }
                     }
                 }
                 .divider {
                     padding: 0;
                     border: 0;
-                    border-top: 1px solid var(--gray-e4);
+                    border-top: 2px solid var(--gray-e4);
                     margin-top: 10px;
-                }
-                .items-menu {
-                    justify-content: space-between;
-                    a {
-                        font-size: 16px;
-                        margin: 10px 0;
-                        text-decoration: none;
-                        color: var(--gray-72);
-                    }
                 }
             }
         }
@@ -82,15 +88,85 @@
             height: 100vh;
             background-color: var(--black-t);
         }
+        #open-btn {
+            display: none;
+        }
+        #close-btn {
+            display: flex;
+        }
         #menu {
+            display: flex;
             top: 0;
             right: 0;
+        }
+        a {
+            #logo {
+                left: 70px;
+                z-index: 4;
+            }
         }
     }
 }
 
 @media (min-width: 1024px) {
-    header {
+    // .open-menu {
+    //     overflow: hidden;
+    // }
+    #header {
         height: 120px;
+        width: 100%;
+        #open-btn, #close-btn {
+            display: none;
+        }
+        a {
+            #logo {
+                top: 20px;
+                width: 200px;
+                align-self: center;
+            }
+        }
+        #menu {
+            position: initial;
+
+            width: 100%;
+            height: 120px;
+            background-color: transparent;
+            margin: 0;
+            margin-left: 220px;
+            padding: 0;
+            justify-content: center;
+            nav {
+                ul {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    li {
+                        margin: 0;
+                        padding: 0;
+                        flex-direction: row;
+                        justify-content: center;
+                        a {
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            text-decoration: none;
+                            color: var(--gray-72);
+                            font-weight: 600;
+                            font-size: 16px;
+                        }
+                    }
+                    .divider {
+                        margin: 0;
+                        padding: 0;
+                        border: 0;
+                        border-left: 2px solid var(--gray-e4);
+                        &:first-child {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }   
     }
 }

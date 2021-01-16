@@ -119,6 +119,7 @@ hr.trace {
   width: 100%;
   height: 100px;
   background-color: var(--gray-ef);
+  position: relative;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
@@ -127,18 +128,25 @@ hr.trace {
   display: none;
 }
 #header a #logo {
+  position: absolute;
+  left: 10px;
+  top: 22px;
   width: 130px;
+  transition: left 0.5s ease-in-out;
 }
-#header #open-btn {
+#header #open-btn, #header #close-btn {
   outline: none;
   border: none;
-  margin-right: 10px;
+  z-index: 3;
+}
+#header #close-btn {
+  display: none;
 }
 #header #menu {
   flex-direction: column;
   transition: all 0.5s ease-in-out;
   width: 320px;
-  height: 370px;
+  height: 400px;
   position: absolute;
   background-color: var(--gray-ef);
   top: -370px;
@@ -148,39 +156,35 @@ hr.trace {
 }
 #header #menu nav ul {
   width: 320px;
-  margin: 10px;
+  margin-top: 90px;
   padding: 0;
   flex-direction: column;
+}
+#header #menu nav ul li {
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+  align-items: center;
+}
+#header #menu nav ul li a {
   text-transform: uppercase;
   text-decoration: none;
-}
-#header #menu nav ul #header-menu {
-  align-items: center;
-  justify-content: space-between;
-}
-#header #menu nav ul #header-menu li {
-  justify-content: space-between;
-}
-#header #menu nav ul #header-menu li a {
   text-decoration: none;
-  color: var(--black-26);
+  color: var(--gray-72);
   font-weight: 600;
   font-size: 16px;
+}
+#header #menu nav ul div {
+  flex-direction: column;
+}
+#header #menu nav ul div li:first-child {
+  margin-bottom: 20px;
 }
 #header #menu nav ul .divider {
   padding: 0;
   border: 0;
-  border-top: 1px solid var(--gray-e4);
+  border-top: 2px solid var(--gray-e4);
   margin-top: 10px;
-}
-#header #menu nav ul .items-menu {
-  justify-content: space-between;
-}
-#header #menu nav ul .items-menu a {
-  font-size: 16px;
-  margin: 10px 0;
-  text-decoration: none;
-  color: var(--gray-72);
 }
 
 .open-menu {
@@ -195,14 +199,74 @@ hr.trace {
   height: 100vh;
   background-color: var(--black-t);
 }
+.open-menu #header #open-btn {
+  display: none;
+}
+.open-menu #header #close-btn {
+  display: flex;
+}
 .open-menu #header #menu {
+  display: flex;
   top: 0;
   right: 0;
 }
+.open-menu #header a #logo {
+  left: 70px;
+  z-index: 4;
+}
 
 @media (min-width: 1024px) {
-  header {
+  #header {
     height: 120px;
+    width: 100%;
+  }
+  #header #open-btn, #header #close-btn {
+    display: none;
+  }
+  #header a #logo {
+    top: 20px;
+    width: 200px;
+    align-self: center;
+  }
+  #header #menu {
+    position: initial;
+    width: 100%;
+    height: 120px;
+    background-color: transparent;
+    margin: 0;
+    margin-left: 220px;
+    padding: 0;
+    justify-content: center;
+  }
+  #header #menu nav ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #header #menu nav ul li {
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #header #menu nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-decoration: none;
+    color: var(--gray-72);
+    font-weight: 600;
+    font-size: 16px;
+  }
+  #header #menu nav ul .divider {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-left: 2px solid var(--gray-e4);
+  }
+  #header #menu nav ul .divider:first-child {
+    display: none;
   }
 }
 #projects {
