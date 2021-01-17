@@ -47,25 +47,25 @@ divulgar os produtos ou serviços.
 
 ### Desenvolver layout no XD
 
-* [ ] Dispositivos small (min-width: 576px);
-* [ ] Dispositivos médios (min-width: 768px);
-* [ ] Dispositivos large (min-width: 992px);
-* [ ] Dispositivos x-large (min-width: 1200px);
-* [ ] Dispositivos xx-large (min-width: 1920px).
+* [x] Dispositivos mobile;
+* [x] Dispositivos médios (min-width: 1024px);
+* [x] Dispositivos large (min-width: 1024px);
+* [x] Dispositivos x-large (min-width: 1px);
+* [x] Dispositivos xx-large (min-width: 1920px).
 
 ### Criar estrutura básica do projeto
 
 * [x] Repositório local;
 * [x] Repositório Git Hub;
 * [x] Conectar repositórios;
-* [ ] Criar package.json com extensões;
-* [ ] Criar arquivos sass (mixin, default, variáveis, fonts, etc.);
-* [ ] Gerar arquivos svg para a logo da aba do browser.
+* [x] Criar package.json com extensões;
+* [x] Criar arquivos sass (mixin, default, variáveis, fonts, etc.);
+* [x] Gerar arquivos svg para a logo da aba do browser.
 
 ### Desenvolvimento
 
-* [ ] Criar página Header/Footer mobile;
-* [ ] Criar página Header/Footer desktop;
+* [x] Criar página Header/Footer mobile;
+* [x] Criar página Header/Footer médios;
 * [ ] Criar a Home Page;
 * [ ] Criar a página de produtos e serviços;
 * [ ] Criar página de agendamento;
@@ -101,8 +101,4 @@ O casal Paulo e Karen Bittar, designers de interior com puplicações constantes
 
 Embora não entendam de infraestrutura de TI, de tráfego de rede e de armazenamento de imagens, eles sabem como fotografias ocupam espaço e deixam a página mais lenta, por isso nos solicitaram para trabalhar o visual de uma forma que diminua o tamanho dos arquivos sem perder a qualidade das imagens e a navegação seja a melhor possível e para isso colocaram à disposição o seu acervo fotográfico.
 
-<<<<<<< HEAD
-Eles querem aque a página principal exiba imagens de seus projetos mais interessantes, bem como o de seus parceiros de modo atraente, exibindo uma foto em miniatura do profissional e já deixando o número do WhatsApp junto às suas obras para facilitar o contato, visto que, de modo geral os projetos são personalizados e atendem a um público mais exigente e com melhor poder aquisitivo. Nesse caso, o cliente que se sentir atraído pela obra poderá navegar rapidamente para a página do profissional ou entrar em contato com ele sem perder tempo. Querem um campo de pesquisa, por causa da grande quantidade de produtos que pretendem catalogar, o cadastro de clientes, tanto corporativo quanto pessoa física. No menu eles pediram uma página de produtos, uma de designers, uma de projetos. Eles não precisam de uma página específica de Quem Somos porque na página de projetos deverá falar dos profissionais.
-=======
 No briefing, Eles pediram que a página principal contenha imagens de seus projetos em destaque, bem como o de seus parceiros, de modo atraente, exibindo uma foto em miniatura do profissional, já deixando o ícone do WhatsApp e a do instagram junto à obra de cada designer para facilitar o contato, visto que, de modo geral os projetos são personalizados e atendem a um público mais exigente e que não gosta de perder tempo. Nesse caso, o cliente que se sentir atraído pela obra poderá navegar rapidamente para a página do do perfil do profissional, entrar no seu instagram, ou ainda, entrar em contato com ele diretamente via WhatsApp. Ainda na página principal querem que mostre as fotos dos produtos e acessórios oferecidos pelo escritório de modo navegável, para que os clientes sejam atraídos facilmente e querem que deixe um campo de pesquisa que leve à página desses produtos, por causa da grande quantidade catalogados. Eles querem a home page o mais limpa possível e não deve ter nenhum tipo de campo de preenchimento a não ser o de pesquisa. O cadastro de clientes deve ser direcionado para a página específica. Eles pediram uma página de produtos, uma de designers e uma de projetos. Não precisam de uma página específica de "Quem Somos" porque na página de designers deverá falar o perfil dos profissionais.
->>>>>>> main
