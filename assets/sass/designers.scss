@@ -43,3 +43,66 @@
         }
     }
 }
+
+@media (min-width: 1920px) {
+    #designers {
+        flex-direction: column;
+        width: 100%;
+        h1 {
+            @include title;
+            font-size: 100px;
+            margin: 100px 0;
+        }
+        select {
+            width: 300px;
+            font-size: 24px;
+        }
+        .designer-information {
+            flex-direction: row;
+            position: relative;
+            margin-bottom: 100px;
+            #designer-id + .designer-photo {
+                order: 1;
+                &:first-child {
+                    order: 2;
+                }
+            }
+            #designer-id {
+                position: absolute;
+                right: calc(50% - 133px);
+                width: 400px;
+                justify-content: space-around;
+                h2 {
+                    position: absolute;
+
+                    margin: 0 40px;
+                    font-family: 'Montserrat Alternates';
+                    font-size: 42px;
+                    color: var(--gray-72);
+                }
+                picture {
+                    position: absolute;
+                    top: 75px;
+                    img {
+                        width: 40px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .designer-photo {
+                img {
+                    width: 640px;
+                }
+            }
+            article {
+                margin: 220px;
+                text-align: justify;
+                font-family: 'Montserrat Alternates';
+                font-weight: 300;
+                font-size: 38px;
+                color: var(--gray-72);
+            }
+        }
+    }
+
+}

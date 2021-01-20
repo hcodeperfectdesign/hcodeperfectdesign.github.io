@@ -69,7 +69,8 @@
                 </picture>
             </div>
             <picture class="designer-photo">
-                <img src="assets/img/webp/img-paulo-768.webp" alt="Foto Paulo">
+                <source srcset="assets/img/jpg/img-paulo-640.jpg" media="(min-width: 1920px)" />
+                <img src="assets/img/jpg/img-paulo-768.jpg" alt="Foto Paulo">
             </picture>
             <article>
                 Paulo Bittar é designer de interior com grande experiência em projetos comerciais e residenciais. Seu traço é conceitual e equilibrado, sempre focado na essência do cliente. Sua decoração contemporânea e cosmopolita aposta no conforto e no bem-estar, com um traço simples e poético do genuíno material brasileiro moderno.
@@ -120,7 +121,7 @@
             header.classList.toggle('open-menu');
           }
         );
-        const btnClose = document.querySelector('#menu');
+        const btnClose = document.querySelector('#close-btn');
           btnClose.addEventListener('click', e=> {
             const header = document.querySelector('body');
             header.classList.toggle('open-menu');

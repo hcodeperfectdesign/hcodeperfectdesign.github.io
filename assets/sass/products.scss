@@ -31,13 +31,20 @@
         width: 50%;
         border: var(--gray-72) solid 1px;
         height: 30px;
+        margin-bottom: 30px;
     }
     .product-items {
+        position: relative;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        align-self: center;
-        img {
-            width: 100%;
+        margin-bottom: 100px;
+        justify-items: center;
+        align-items: center;
+        grid-gap: 50px 5px;
+        a {
+            img {
+                width: 80%;
+            }
         }
     }
 }

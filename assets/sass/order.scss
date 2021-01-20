@@ -61,3 +61,11 @@
         }
     }
 }
+@media (min-width: 768px) {
+    #order {
+        align-items: center;
+    }
+    #client, #product-order {
+        width: 600px;
+    }
+}

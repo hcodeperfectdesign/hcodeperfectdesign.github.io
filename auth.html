@@ -52,7 +52,7 @@
         </div>
     </header>
     <main id="auth">
-        <section>
+        <section id="login">
             <form >
                 <h1>Sou cadastrado</h1>
                 <div class="field">
@@ -76,7 +76,7 @@
                 </div>
             </form>
         </section>
-        <section>
+        <section id="registration-form">
             <form>
                 <h2>Quero me cadastrar</h2>
                 <div class="client-type">
@@ -86,7 +86,7 @@
                     </div>
                     <div>
                         <input type="radio" name="company" id="company" />
-                        <label for="company">Pessoa Física</label>
+                        <label for="company">Pessoa Jurídica</label>
                     </div>
                 </div>
                 <div class="field">
@@ -196,7 +196,7 @@
             header.classList.toggle('open-menu');
           }
         );
-        const btnClose = document.querySelector('#menu');
+        const btnClose = document.querySelector('#close-btn');
           btnClose.addEventListener('click', e=> {
             const header = document.querySelector('body');
             header.classList.toggle('open-menu');
