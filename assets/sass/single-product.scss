@@ -137,3 +137,129 @@
         margin-top: 40px;
     }
 }
+
+@media (min-width: 1024px) {
+    #single-product {
+        h1 {
+            @include title-1024;
+            margin-bottom: 20px;
+    
+        }
+        h2 {
+            font-size: initial;
+            font-size: 24px;
+        }
+        h3 {
+            margin: 10px;
+            font-family: 'Montserrat Alternates';
+            font-size: 20px;
+            color: var(--gray-72);
+            font-weight: 400;
+        }
+        #item-view {
+            justify-content: center;
+            position: relative;
+            #displayed-item {
+                width: 50%;
+                img {
+                    width: 100%;
+                }
+            }
+            nav {
+                picture {
+                    position: absolute;
+                    height: 40px;
+                    top: 170px;
+                    img {
+                        &:first-child {
+                            right: 0;
+                        }
+                        &:last-child {
+                            left: -500px;
+                        }
+                    }
+                }
+            }
+        }
+        ul {
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            li {
+                width: 8px;
+                height: 8px;
+                background-color: var(--gray-e4);
+                &:first-child {
+                    background-color: var(--gray-bf);
+                }
+                
+            }
+            li + li {
+                margin-left: 5px;
+            }
+        }
+        #add-product {
+            margin-top: 40px;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            #order-item {
+                position: relative;
+                width: 70%;
+                label {
+                    width: 100%;
+                    color: var(--gray-72);
+                    align-items: center;
+                    padding-left: 5px;
+                    &:first-child {
+                        height: 30px;
+                        background-color: var(--black);
+                        font-size: 12px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: var(--gray-e4);
+                        border: var(--gray-26) solid 2px;
+                    }
+                }
+                #choice {
+                    position: absolute;
+                    right: 3px;
+                    top: 5px;
+                }
+            }
+            #qtty-order {
+                margin-right: 10px;
+                label {
+                    color: var(--gray-72);
+                    margin-right: 5px;
+                    height: 30px;
+                    align-items: center;
+                    margin: 5;
+                }
+                #item-qtty {
+                    width: 60px;
+                    border: var(--gray-72) solid 1px;
+                    text-align: right;
+                    padding-right:  5px;
+                    color: var(--gray-72);
+                    font-weight: 600;
+                }
+            }
+        }
+        p {
+            font-family: 'Montserrat Alternates';
+            font-size: 12;
+            font-weight: 400;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            &:last-child {
+                text-align: justify;
+                margin: 20px 10px;
+                font-family: 'Nunito';
+                font-size: 12;
+                color: var(--black);
+            }
+        }
+    }
+
+}

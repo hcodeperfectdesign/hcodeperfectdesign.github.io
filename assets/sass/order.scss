@@ -6,7 +6,7 @@
         flex-direction: column;
         margin: 0 10px;
         h1 {
-            @include title;
+            @include title-mobile;
         }
         .order-id {
             margin-top: 15px;

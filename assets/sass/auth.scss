@@ -12,7 +12,7 @@
                 margin-bottom: 40px;
             }
             h1 {
-                @include title;
+                @include title-mobile;
             }
             .field {
                 position: relative;
@@ -70,7 +70,7 @@
                 }
             }
             h2 {
-                @include title;
+                @include title-mobile;
             }
             .client-type {
                 justify-content: space-around;
