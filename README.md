@@ -66,10 +66,14 @@ divulgar os produtos ou serviços.
 
 * [x] Criar página Header/Footer mobile;
 * [x] Criar página Header/Footer médios;
-* [ ] Criar a Home Page;
-* [ ] Criar a página de produtos e serviços;
-* [ ] Criar página de agendamento;
-* [ ] Criar formulário de contato;
+* [x] Criar a Home Page;
+* [x] Criar a página de produtos;
+* [x] Criar página de agendamento;
+* [x] Criar página de login;
+* [x] Criar página de cadastro;
+* [x] Criar formulário de contato;
+* [x] Criar formulário de pedidos;
+* [x] Criar formulário de produto escolhido;
 
 ## Design de interior
 
