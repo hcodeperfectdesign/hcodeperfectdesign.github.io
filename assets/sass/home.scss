@@ -544,6 +544,11 @@
             }
         }
         #new-schedule {
+            header {
+                h1 {
+                        @include title-1024;
+                    }
+            }
             .calendar {
                 max-width: 1024px;
                 .month {
@@ -801,6 +806,13 @@
                         top: 10px;
                     }
                 }
+            }
+        }
+        #new-schedule {
+            header {
+                h1 {
+                        @include title-1366;
+                    }
             }
         }
     }

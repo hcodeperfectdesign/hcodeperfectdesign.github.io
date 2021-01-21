@@ -977,6 +977,12 @@ hr.trace {
   #projects #contact a:active {
     background-color: var(--black-active);
   }
+  #projects #new-schedule header h1 {
+    margin: 80px 0;
+    justify-content: center;
+    font-size: 34px;
+    color: var(--gray-72);
+  }
   #projects #new-schedule .calendar {
     max-width: 1024px;
   }
@@ -1211,6 +1217,10 @@ hr.trace {
   #projects #contact picture img:last-child {
     right: 20px;
     top: 10px;
+  }
+  #projects #new-schedule header h1 {
+    font-size: 70px;
+    margin: 100px 0;
   }
 }
 footer {
