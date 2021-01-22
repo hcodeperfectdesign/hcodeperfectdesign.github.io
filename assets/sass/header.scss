@@ -14,10 +14,10 @@
     a {
         #logo {
             position: absolute;
-            left: 10px;
+            transition: left .5s ease-in-out;
+            right: calc(100% - 150px);
             top: 22px;
             width: 130px;
-            transition: left .5s ease-in-out;
         }
     }
     #open-btn, #close-btn {
@@ -102,7 +102,8 @@
         }
         a {
             #logo {
-                left: 70px;
+                transition: all .5s ease-in-out;
+                right: 180px;
                 z-index: 4;
             }
         }
