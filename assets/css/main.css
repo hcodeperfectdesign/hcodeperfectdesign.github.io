@@ -453,9 +453,12 @@ hr.trace {
 #projects #project-photos .project-designers .professional-profile a .personal-id strong {
   font-family: merienda;
   font-size: 16px;
+  text-decoration: none;
+  color: var(--black);
 }
 #projects #project-photos .project-designers .professional-profile a .personal-id small {
   font-size: 10px;
+  color: var(--black);
 }
 #projects #project-photos .project-designers .professional-profile .photo {
   position: absolute;
