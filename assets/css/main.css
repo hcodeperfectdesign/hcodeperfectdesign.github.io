@@ -435,47 +435,49 @@ hr.trace {
   color: var(--gray-72);
 }
 #projects #project-photos .project-designers {
+  position: relative;
   flex-direction: column;
   position: relative;
   margin-bottom: 60px;
 }
-#projects #project-photos .project-designers picture > img {
+#projects #project-photos .project-designers .image img {
   width: 100%;
 }
-#projects #project-photos .project-designers .professional-profile a {
-  text-decoration: none;
-  width: 35%;
+#projects #project-photos .project-designers .designer-id {
+  justify-content: space-between;
 }
-#projects #project-photos .project-designers .professional-profile a .personal-id {
-  flex-direction: column;
-  margin-left: 10px;
-}
-#projects #project-photos .project-designers .professional-profile a .personal-id strong {
-  font-family: merienda;
-  font-size: 16px;
-  text-decoration: none;
-  color: var(--black);
-}
-#projects #project-photos .project-designers .professional-profile a .personal-id small {
-  font-size: 10px;
-  color: var(--black);
-}
-#projects #project-photos .project-designers .professional-profile .photo {
+#projects #project-photos .project-designers .designer-id .photo {
   position: absolute;
-  right: calc(50% - 42px);
-  bottom: 0;
+  right: calc(50% - 45px);
+  bottom: -5px;
 }
-#projects #project-photos .project-designers .professional-profile .photo img {
+#projects #project-photos .project-designers .designer-id .photo a img {
   width: 90px;
   height: 90px;
   border: var(--bg-color) solid 5px;
   border-radius: 50%;
 }
-#projects #project-photos .project-designers .professional-profile .designer-contact {
-  position: absolute;
-  right: 15%;
+#projects #project-photos .project-designers .designer-id .professional-profile {
+  width: 35%;
 }
-#projects #project-photos .project-designers .professional-profile .designer-contact a img {
+#projects #project-photos .project-designers .designer-id .professional-profile a {
+  text-decoration: none;
+  flex-direction: column;
+  margin-left: 10px;
+}
+#projects #project-photos .project-designers .designer-id .professional-profile a strong {
+  font-family: merienda;
+  font-size: 16px;
+  color: var(--black);
+}
+#projects #project-photos .project-designers .designer-id .professional-profile a small {
+  font-size: 10px;
+  color: var(--black);
+}
+#projects #project-photos .project-designers .designer-id .designer-contact {
+  margin-right: 10px;
+}
+#projects #project-photos .project-designers .designer-id .designer-contact a img {
   width: 30px;
   height: 30px;
   margin-top: 5px;
@@ -508,7 +510,6 @@ hr.trace {
   margin: 0;
   padding: 0 10px;
   position: absolute;
-  display: flex;
   width: 100%;
   height: 30px;
   left: calc(50% - 150px);
@@ -519,18 +520,6 @@ hr.trace {
   width: 30px;
   height: 30px;
   right: 0;
-}
-#projects #products p {
-  display: flex;
-  margin: 40px 0;
-  width: 300px;
-  font-family: "Montserrat Alternates";
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--gray-72);
-  text-align: center;
-  justify-content: space-between;
-  align-self: center;
 }
 #projects #products .product-option {
   width: calc(100% - 1em);
@@ -593,6 +582,18 @@ hr.trace {
 #projects #products .products-navigation ul li:first-child {
   background-color: var(--gray-72);
 }
+#projects #products p {
+  display: flex;
+  margin: 40px 0;
+  width: 70%;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--gray-72);
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+}
 #projects #contact {
   align-self: center;
   width: 300px;
@@ -600,6 +601,18 @@ hr.trace {
   position: relative;
 }
 #projects #contact a {
+  width: 100%;
+  height: 30px;
+  border: var(--black) 1px solid;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--bg-color);
+  color: var(--black);
   display: flex;
   border: var(--gray-72) solid 1px;
   height: 40px;
@@ -613,6 +626,13 @@ hr.trace {
   justify-content: center;
   cursor: pointer;
   text-decoration: none;
+}
+#projects #contact a:hover {
+  background-color: var(--black-hover);
+  color: var(--gray-f2);
+}
+#projects #contact a:active {
+  background-color: var(--black-active);
 }
 #projects #contact picture img {
   position: absolute;
@@ -765,13 +785,10 @@ hr.trace {
     color: var(--black);
     border: var(--bg-color) solid 2px;
     background-color: transparent;
-    color: var(--bg-color);
     position: absolute;
     bottom: 50px;
     right: 50px;
-    display: flex;
     width: 160px;
-    height: 50px;
     font-size: 20px;
   }
   #projects #home header a:hover {
@@ -785,90 +802,40 @@ hr.trace {
     border: var(--black) solid 2px;
   }
   #projects #project-photos h2 {
-    font-size: 40px;
-    display: flex;
     margin: 80px 0;
-    padding: 0;
     justify-content: center;
-    align-items: center;
-    height: 100px;
+    font-size: 34px;
+    color: var(--gray-72);
   }
   #projects #project-photos .project-designers {
-    position: relative;
-    margin: 0 20px;
-    flex-direction: column;
-    justify-content: space-between;
     margin-bottom: 100px;
   }
-  #projects #project-photos .project-designers > picture {
-    justify-content: flex-end;
+  #projects #project-photos .project-designers .designer-id .photo {
+    bottom: -15px;
+    right: calc(50% - 60px);
   }
-  #projects #project-photos .project-designers > picture > img {
-    align-items: flex-end;
-    width: 85%;
+  #projects #project-photos .project-designers .designer-id .photo a img {
+    width: 120px;
+    height: 120px;
   }
-  #projects #project-photos .project-designers .professional-profile {
-    flex-direction: column;
-  }
-  #projects #project-photos .project-designers .professional-profile a .personal-id {
-    position: absolute;
-    top: 0;
-    margin-left: 0;
-    flex-direction: column;
-  }
-  #projects #project-photos .project-designers .professional-profile a .personal-id strong {
-    font-family: merienda;
+  #projects #project-photos .project-designers .designer-id .professional-profile a strong {
     font-size: 18px;
   }
-  #projects #project-photos .project-designers .professional-profile a .personal-id small {
+  #projects #project-photos .project-designers .designer-id .professional-profile a small {
     font-size: 12px;
   }
-  #projects #project-photos .project-designers .professional-profile .photo {
-    position: absolute;
-    top: 50px;
-    left: 0;
-  }
-  #projects #project-photos .project-designers .professional-profile .designer-contact {
-    position: absolute;
-    left: 0;
-    top: 150px;
-  }
-  #projects #project-photos .project-designers .professional-profile .designer-contact a img {
-    width: 40px;
-    height: 40px;
-    margin-top: 3px;
-    margin-right: 5px;
-  }
-  #projects #products {
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-  }
   #projects #products h2 {
-    font-size: 40px;
+    margin: 80px 0;
+    justify-content: center;
+    font-size: 34px;
+    color: var(--gray-72);
   }
   #projects #products #search-products {
-    position: relative;
     width: 400px;
     height: 30px;
-    align-self: center;
-    margin-bottom: 40px;
   }
   #projects #products #search-products #product {
-    margin: 0;
-    padding: 0 5px;
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 30px;
     left: calc(50% - 200px);
-    border: var(--black) solid 1px;
-  }
-  #projects #products #search-products #magnifier {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    right: 0;
   }
   #projects #products .product-option {
     width: calc(100% - 2em);
@@ -900,85 +867,11 @@ hr.trace {
   #projects #products .product-option a:active {
     background-color: var(--black-active);
   }
-  #projects #products .products-navigation {
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-  }
-  #projects #products .products-navigation picture #forniture {
-    width: 100%;
-  }
-  #projects #products .products-navigation picture #hearth {
-    position: absolute;
-    bottom: 50px;
-    right: 20px;
-  }
-  #projects #products .products-navigation nav picture img {
-    position: absolute;
-    height: 50px;
-  }
-  #projects #products .products-navigation nav picture img:first-child {
-    top: calc(50% - 25px);
-    right: 20px;
-  }
-  #projects #products .products-navigation nav picture img:last-child {
-    position: absolute;
-    top: calc(50% - 25px);
-    left: 20px;
-  }
-  #projects #products .products-navigation ul {
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-  }
-  #projects #products .products-navigation ul li {
-    width: 8px;
-    height: 8px;
-    background-color: var(--gray-f2);
-    margin: 5px 2px;
-  }
-  #projects #products .products-navigation ul li:first-child {
-    background-color: var(--gray-72);
-  }
   #projects #products p {
-    display: flex;
-    margin: 40px 0;
-    width: 400px;
-    font-family: "Montserrat Alternates";
-    font-size: 20px;
-    font-weight: 400;
-    color: var(--gray-72);
-    text-align: center;
-    justify-content: space-between;
-    align-self: center;
+    font-size: 24px;
   }
   #projects #contact {
-    align-self: center;
     width: 500px;
-    margin: 40px 10px;
-    position: relative;
-  }
-  #projects #contact a {
-    width: 100%;
-    height: 30px;
-    border: var(--black) 1px solid;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    text-transform: uppercase;
-    text-decoration: none;
-    outline: none;
-    cursor: pointer;
-    background-color: var(--bg-color);
-    color: var(--black);
-    width: 500px;
-  }
-  #projects #contact a:hover {
-    background-color: var(--black-hover);
-    color: var(--gray-f2);
-  }
-  #projects #contact a:active {
-    background-color: var(--black-active);
   }
   #projects #new-schedule header h1 {
     margin: 80px 0;
@@ -1014,75 +907,40 @@ hr.trace {
   }
   #projects #project-photos {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px 1fr 1fr;
     grid-gap: 100px 50px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
   }
   #projects #project-photos h2 {
     grid-column: 1/3;
     font-size: 70px;
     margin: 100px 0;
-    font-size: 70px;
-    display: flex;
-    margin-top: 150px;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
   }
   #projects #project-photos .project-designers {
-    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 100px;
+    grid-template-areas: "image" "designer-id";
   }
-  #projects #project-photos .project-designers > picture {
-    justify-content: center;
-    margin: 0;
-  }
-  #projects #project-photos .project-designers > picture > img {
-    align-items: flex-end;
+  #projects #project-photos .project-designers .image {
+    grid-area: image;
     width: 100%;
   }
-  #projects #project-photos .project-designers .professional-profile {
-    flex-direction: column;
+  #projects #project-photos .project-designers .designer-id {
+    grid-area: designer-id;
   }
-  #projects #project-photos .project-designers .professional-profile a {
-    position: absolute;
-    margin-left: 0;
-    left: 100px;
-    width: 35%;
-    flex-direction: column;
+  #projects #project-photos .project-designers .designer-id .photo {
+    grid-area: photo;
+    bottom: 40px;
   }
-  #projects #project-photos .project-designers .professional-profile a .personal-id {
-    bottom: -40px;
+  #projects #project-photos .project-designers .designer-id .photo a img {
+    width: 120px;
+    height: 120px;
   }
-  #projects #project-photos .project-designers .professional-profile a .personal-id strong {
-    font-family: merienda;
-    font-size: 18px;
+  #projects #project-photos .project-designers .designer-id .professional-profile {
+    grid-area: professional-profile;
   }
-  #projects #project-photos .project-designers .professional-profile a .personal-id small {
-    font-size: 12px;
-  }
-  #projects #project-photos .project-designers .professional-profile .photo {
-    top: initial;
-  }
-  #projects #project-photos .project-designers .professional-profile .photo img {
-    position: absolute;
-    bottom: -50px;
-    left: -105px;
-  }
-  #projects #project-photos .project-designers .professional-profile .designer-contact a {
-    position: absolute;
-    flex-direction: row;
-    bottom: -300px;
-    left: 270px;
-    flex: 1;
-  }
-  #projects #project-photos .project-designers .professional-profile .designer-contact a img {
-    width: 40px;
-    height: 40px;
-    margin-top: 3px;
-    margin-right: 5px;
+  #projects #project-photos .project-designers .designer-id .designer-contact {
+    grid-area: professional-profile;
   }
   #projects #products {
     flex-direction: column;
