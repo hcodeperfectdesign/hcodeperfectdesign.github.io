@@ -176,6 +176,14 @@ body > main {
   font-weight: 600;
   font-size: 16px;
 }
+#header #menu nav ul div {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#header #menu nav ul div li:first-child {
+  margin-bottom: 15px;
+}
 
 .open-menu {
   overflow: hidden;
@@ -228,8 +236,6 @@ body > main {
   }
   #header #menu {
     position: initial;
-    top: -20px;
-    right: 10px;
     width: 75%;
     height: 120px;
     background-color: transparent;
@@ -258,7 +264,7 @@ body > main {
     margin: 0;
   }
   #header #menu nav ul li a {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
   }
   #header #menu nav ul div {
@@ -271,116 +277,20 @@ body > main {
   }
 }
 @media (min-width: 1366px) {
-  .open-menu {
-    overflow: hidden;
-  }
-
-  #header {
-    height: 120px;
-    width: 100%;
-  }
-  #header #open-btn, #header #close-btn {
-    display: none;
-  }
-  #header a #logo {
-    top: 15px;
-    width: 200px;
-    align-self: center;
-  }
-  #header #menu {
-    position: initial;
-    width: 100%;
-    height: 120px;
-    background-color: transparent;
-    margin: 0;
-    margin-left: 300px;
-    padding: 0;
-    justify-content: center;
-  }
-  #header #menu nav ul {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  #header #menu nav ul li {
-    margin: 0;
-    padding: 0;
-    flex-direction: row;
-    justify-content: center;
-  }
   #header #menu nav ul li a {
-    text-transform: uppercase;
-    text-decoration: none;
-    text-decoration: none;
-    color: var(--gray-72);
-    font-weight: 600;
     font-size: 18px;
-  }
-  #header #menu nav ul .divider {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    border-left: 2px solid var(--gray-e4);
-  }
-  #header #menu nav ul .divider:first-child {
-    display: none;
   }
 }
 @media (min-width: 1920px) {
   #header {
     height: 150px;
-    width: 100%;
-    background-color: rgba(239, 239, 239, 0.9);
-  }
-  #header #open-btn, #header #close-btn {
-    display: none;
   }
   #header a #logo {
     width: 250px;
-    align-self: center;
     right: calc(100% - 270px);
   }
-  #header #menu {
-    position: initial;
-    width: 100%;
-    height: 120px;
-    background-color: transparent;
-    margin: 0;
-    margin-left: 300px;
-    padding: 0;
-    justify-content: center;
-  }
-  #header #menu nav ul {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  #header #menu nav ul li {
-    margin: 0;
-    padding: 0;
-    flex-direction: row;
-    justify-content: center;
-  }
   #header #menu nav ul li a {
-    text-transform: uppercase;
-    text-decoration: none;
-    text-decoration: none;
-    color: var(--gray-72);
-    font-weight: 600;
-    font-size: 24px;
-  }
-  #header #menu nav ul .divider {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    border-left: 2px solid var(--gray-e4);
-  }
-  #header #menu nav ul .divider:first-child {
-    display: none;
+    font-size: 22px;
   }
 }
 #projects {
@@ -1688,12 +1598,6 @@ footer p {
     margin-top: 30px;
     margin-bottom: 10px;
   }
-  #products #product-options {
-    width: 98vw;
-    justify-content: center;
-    align-self: center;
-    margin-bottom: 40px;
-  }
   #products #product-options a {
     width: 100%;
     height: 30px;
@@ -1707,7 +1611,6 @@ footer p {
     cursor: pointer;
     background-color: var(--bg-color);
     color: var(--black);
-    display: flex;
     width: calc(30% / 3);
     height: 30px;
     justify-content: center;
@@ -1722,34 +1625,14 @@ footer p {
   #products #product-options a:active {
     background-color: var(--black-active);
   }
-  #products #product-options a + a {
-    margin-left: 5px;
-  }
   #products select {
     width: 300px;
     margin-left: 20px;
-    border: var(--gray-72) solid 1px;
-    height: 30px;
-    margin-bottom: 30px;
     font-size: 18px;
   }
   #products .product-items {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 100px;
     grid-gap: 50px 10px;
-    font-size: 18px;
-    margin-left: 10px;
-    margin: 0 20px;
     margin-bottom: 50px;
-  }
-  #products .product-items .product-item {
-    justify-content: space-between;
-  }
-  #products .product-items .product-item a {
-    grid-template-rows: repeat(2, 1fr);
-    flex-direction: column;
-    text-decoration: none;
   }
   #products .product-items .product-item a img {
     width: 80%;
@@ -1757,12 +1640,8 @@ footer p {
   #products .product-items .product-item a img:last-child {
     width: 40px;
   }
-  #products .product-items .product-item a div {
-    flex-direction: column;
-  }
   #products .product-items .product-item a div strong {
     font-size: 18px;
-    color: var(--black);
   }
 }
 #single-product {
