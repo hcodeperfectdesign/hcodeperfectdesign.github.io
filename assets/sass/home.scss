@@ -1,6 +1,5 @@
 #projects {
     min-width: 320px;
-    // width: 100%;
     background-color: var(--bg-color);
     flex-direction: column;
     #home {
@@ -38,7 +37,6 @@
     
     #project-photos {
         flex-direction: column;
-        // width: 100%;
         h2 {
             @include title-mobile;
         }
