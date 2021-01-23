@@ -244,7 +244,7 @@ body > main {
     padding: 0;
     flex-direction: row;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
   }
   #header #menu nav ul .trace {
     border: none;
@@ -254,9 +254,20 @@ body > main {
   #header #menu nav ul .trace:first-child {
     display: none;
   }
+  #header #menu nav ul li {
+    margin: 0;
+  }
   #header #menu nav ul li a {
     font-size: 14px;
     font-weight: 700;
+  }
+  #header #menu nav ul div {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #header #menu nav ul div li:first-child {
+    margin-bottom: 15px;
   }
 }
 @media (min-width: 1366px) {
