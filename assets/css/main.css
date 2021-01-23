@@ -106,7 +106,7 @@ body > main {
 }
 
 hr.trace {
-  background-color: var(--gray-bf);
+  background-color: var(--black);
   width: calc(100% - 2em);
   height: 1px;
   margin: 3em 0;
@@ -233,8 +233,9 @@ hr.trace {
     display: none;
   }
   #header a #logo {
-    top: 20px;
     width: 200px;
+    right: calc(100% - 210px);
+    top: 14px;
   }
   #header #menu {
     position: initial;
@@ -284,8 +285,8 @@ hr.trace {
     display: none;
   }
   #header a #logo {
-    top: 20px;
-    width: 150px;
+    top: 15px;
+    width: 200px;
     align-self: center;
   }
   #header #menu {
@@ -339,9 +340,9 @@ hr.trace {
     display: none;
   }
   #header a #logo {
-    top: 20px;
     width: 250px;
     align-self: center;
+    right: calc(100% - 270px);
   }
   #header #menu {
     position: initial;
@@ -768,6 +769,9 @@ hr.trace {
 }
 
 @media (min-width: 1024px) {
+  #projects #home header {
+    margin-top: -120px;
+  }
   #projects #home header .overlay {
     display: none;
   }
