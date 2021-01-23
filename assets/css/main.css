@@ -908,6 +908,9 @@ hr.trace {
   }
 }
 @media (min-width: 1366px) {
+  #projects #home header {
+    margin-top: -150px;
+  }
   #projects #home header a {
     width: 250px;
     height: 50px;
