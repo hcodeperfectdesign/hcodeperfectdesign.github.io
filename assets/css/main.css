@@ -300,7 +300,6 @@ body > main {
   flex-direction: column;
 }
 #projects #home header {
-  min-width: 320px;
   width: 100%;
   height: 100vh;
   margin-top: -100px;
@@ -351,7 +350,7 @@ body > main {
   margin-bottom: 60px;
 }
 #projects #project-photos .project-designers .image img {
-  width: 100%;
+  width: 100vw;
 }
 #projects #project-photos .project-designers .designer-id {
   justify-content: space-between;
