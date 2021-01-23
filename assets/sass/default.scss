@@ -6,7 +6,7 @@
     font-weight: 400;
 }
 
-body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure, picture, hr, label, h1, h2, h3, h4, h5, h6, a {
+body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure, picture, hr, label, h1, h2, h3, h4, h5, h6, a, hr {
     display: flex;
 }
 
@@ -16,16 +16,5 @@ body {
     background-color: var(--bg-color);
     > main {
         min-height: calc(100vh - 350px);
-    }
-}
-
-hr {
-    &.trace {
-        background-color: var(--black);
-        width: calc(100% - 2em);
-        height: 1px;
-        margin: 3em 0;
-        border: none;
-        align-self: center;
     }
 }
