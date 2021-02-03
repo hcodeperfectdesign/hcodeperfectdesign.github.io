@@ -1,80 +1,87 @@
 @font-face {
-    font-family: 'GreatVibes';
-    src: local("Great Vibes"), url('../fonts/GreatVibes-Regular.ttf'), format('truetype');
-    font-style: normal;
-    font-weight: 400;
+  font-family: "GreatVibes";
+  src: local("Great Vibes"), url("../fonts/GreatVibes-Regular.ttf"),
+    format("truetype");
+  font-style: normal;
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Merienda';
-    src: local('Merienda'), url('../fonts/Merienda-Regular.ttf'), format('truetype');
-    font-style: normal;
-    font-weight: 400;
+  font-family: "Merienda";
+  src: local("Merienda"), url("../fonts/Merienda-Regular.ttf"),
+    format("truetype");
+  font-style: normal;
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Montserrat Alternates';
-    src: local('Light'), url('../fonts/MontserratAlternates-Light.ttf'), format('truetype');
-    font-style: normal;
-    font-weight: 300;
+  font-family: "Montserrat Alternates";
+  src: local("Light"), url("../fonts/MontserratAlternates-Light.ttf"),
+    format("truetype");
+  font-style: normal;
+  font-weight: 300;
 }
 
 @font-face {
-    font-family: 'Montserrat Alternates';
-    src: local('Light Italic'), url('../fonts/MontserratAlternates-Light.ttf'), format('truetype');
-    font-style: italic;
-    font-weight: 300;
+  font-family: "Montserrat Alternates";
+  src: local("Light Italic"), url("../fonts/MontserratAlternates-Light.ttf"),
+    format("truetype");
+  font-style: italic;
+  font-weight: 300;
 }
 
 @font-face {
-    font-family: 'Montserrat Alternates';
-    src: local('Regular 400'), url('../fonts/MontserratAlternates-Regular.ttf'), format('truetype');
-    font-style: normal;
-    font-weight: 400;
+  font-family: "Montserrat Alternates";
+  src: local("Regular 400"), url("../fonts/MontserratAlternates-Regular.ttf"),
+    format("truetype");
+  font-style: normal;
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Montserrat Alternates';
-    src: local('Regular 400'), url('../fonts/MontserratAlternates-Italic.ttf'), format('truetype');
-    font-style: italic;
-    font-weight: 400;
+  font-family: "Montserrat Alternates";
+  src: local("Regular 400"), url("../fonts/MontserratAlternates-Italic.ttf"),
+    format("truetype");
+  font-style: italic;
+  font-weight: 400;
 }
 @font-face {
-    font-family: 'Montserrat Alternates';
-    src: local('Bold 700'), url('../fonts/MontserratAlternates-bold.ttf'), format('truetype');
-    font-style: italic;
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: 'Nunito';
-    src: local('Nunito Light'), url('../fonts/Nunito-Light.ttf');
-    font-style: italic;
-    font-weight: 300;
+  font-family: "Montserrat Alternates";
+  src: local("Bold 700"), url("../fonts/MontserratAlternates-bold.ttf"),
+    format("truetype");
+  font-style: italic;
+  font-weight: 700;
 }
 
 @font-face {
-    font-family: 'Nunito';
-    src: local('Light Italic'), url('../fonts/Nunito-LightItalic.ttf');
-    font-style: normal;
-    font-weight: 300;
+  font-family: "Nunito";
+  src: local("Nunito Light"), url("../fonts/Nunito-Light.ttf");
+  font-style: italic;
+  font-weight: 300;
 }
 
 @font-face {
-    font-family: 'Nunito';
-    src: local('Nunito Regular'), url('../fonts/Nunito-Regular.ttf');
-    font-style: normal;
-    font-weight: 400;
+  font-family: "Nunito";
+  src: local("Light Italic"), url("../fonts/Nunito-LightItalic.ttf");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: local("Nunito Regular"), url("../fonts/Nunito-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
 }
 @font-face {
-    font-family: 'Nunito';
-    src: local('Nunito SemiBold'), url('../fonts/Nunito-SemiBold.ttf');
-    font-style: normal;
-    font-weight: 600;
+  font-family: "Nunito";
+  src: local("Nunito SemiBold"), url("../fonts/Nunito-SemiBold.ttf");
+  font-style: normal;
+  font-weight: 600;
 }
 @font-face {
-    font-family: 'Nunito';
-    src: local('Nunito Bold'), url('../fonts/Nunito-Bold.ttf');
-    font-style: normal;
-    font-weight: 700;
+  font-family: "Nunito";
+  src: local("Nunito Bold"), url("../fonts/Nunito-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
 }
