@@ -87,19 +87,6 @@
               text-transform: uppercase;
             }
           }
-          // a {
-          //   text-decoration: none;
-          //   li {
-          //     flex-direction: row;
-          //     justify-content: space-between;
-          //     align-items: center;
-          //   }
-          // }
-          // li {
-          //   &:first-child {
-          //     margin-bottom: 15px;
-          //   }
-          // }
         }
       }
     }
@@ -196,13 +183,14 @@
             justify-content: space-between;
             align-items: flex-start;
             div {
-              // flex-direction: row;
-              // justify-content: space-between;
-              // align-items: center;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
               a {
                 align-items: center;
                 text-decoration: none;
                 img {
+                  display: flex;
                   width: 30px;
                   height: 30px;
                 }

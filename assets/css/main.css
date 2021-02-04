@@ -282,11 +282,17 @@ body > main {
     justify-content: space-between;
     align-items: flex-start;
   }
+  #header #menu nav ul div div {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
   #header #menu nav ul div div a {
     align-items: center;
     text-decoration: none;
   }
   #header #menu nav ul div div a img {
+    display: flex;
     width: 30px;
     height: 30px;
   }
