@@ -172,7 +172,6 @@ body > main {
 #header #menu nav ul li a {
   text-transform: uppercase;
   text-decoration: none;
-  text-decoration: none;
   color: var(--gray-72);
   font-weight: 600;
   font-size: 16px;
@@ -181,9 +180,18 @@ body > main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  font-weight: 600;
+  font-size: 16px;
 }
-#header #menu nav ul div li:first-child {
-  margin-bottom: 15px;
+#header #menu nav ul div div a {
+  text-decoration: none;
+  color: var(--gray-72);
+}
+#header #menu nav ul div div a img {
+  display: none;
+}
+#header #menu nav ul div div li {
+  text-transform: uppercase;
 }
 
 .open-menu {
@@ -273,11 +281,6 @@ body > main {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-  }
-  #header #menu nav ul div div {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
   }
   #header #menu nav ul div div a {
     align-items: center;
