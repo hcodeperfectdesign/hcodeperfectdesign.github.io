@@ -12,7 +12,7 @@
 }
 @font-face {
   font-family: "Montserrat Alternates";
-  src: local("Light"), url("../fonts/MontserratAlternates-Light.ttf"), format("truetype");
+  src: local("FontLight"), url("../fonts/MontserratAlternates-Light.ttf"), format("truetype");
   font-style: normal;
   font-weight: 300;
 }
@@ -862,6 +862,10 @@ body > main {
   #projects #products #search-products #product {
     height: 40px;
     left: calc(50% - 250px);
+  }
+  #projects #products #search-products #magnifier {
+    width: 40px;
+    height: 40px;
   }
   #projects #products p {
     display: flex;
