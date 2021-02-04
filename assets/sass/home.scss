@@ -421,6 +421,10 @@
           width: calc(100% / 3);
           font-size: 14px;
         }
+        a + a {
+          margin-left: 60px;
+          margin-bottom: 20px;
+        }
       }
       p {
         font-size: 24px;
@@ -430,6 +434,7 @@
       width: 500px;
     }
     #new-schedule {
+      margin-bottom: 60px;
       header {
         h1 {
           @include title-1024;

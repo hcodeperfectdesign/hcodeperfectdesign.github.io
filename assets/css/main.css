@@ -126,7 +126,8 @@ body > main {
   top: 22px;
   width: 130px;
 }
-#header #open-btn, #header #close-btn {
+#header #open-btn,
+#header #close-btn {
   outline: none;
   border: none;
   z-index: 3;
@@ -226,7 +227,8 @@ body > main {
   #header .overlay {
     display: none;
   }
-  #header #open-btn, #header #close-btn {
+  #header #open-btn,
+#header #close-btn {
     display: none;
   }
   #header a #logo {
@@ -272,12 +274,28 @@ body > main {
     justify-content: space-between;
     align-items: flex-start;
   }
-  #header #menu nav ul div li:first-child {
-    margin-bottom: 15px;
+  #header #menu nav ul div div {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #header #menu nav ul div div a {
+    align-items: center;
+    text-decoration: none;
+  }
+  #header #menu nav ul div div a img {
+    width: 30px;
+    height: 30px;
+  }
+  #header #menu nav ul div div a li {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gray-72);
+    text-transform: uppercase;
   }
 }
 @media (min-width: 1366px) {
-  #header #menu nav ul li a {
+  #header #menu nav ul li {
     font-size: 18px;
   }
 }
@@ -780,11 +798,18 @@ body > main {
   #projects #products .product-option a:active {
     background-color: var(--black-active);
   }
+  #projects #products .product-option a + a {
+    margin-left: 60px;
+    margin-bottom: 20px;
+  }
   #projects #products p {
     font-size: 24px;
   }
   #projects #contact {
     width: 500px;
+  }
+  #projects #new-schedule {
+    margin-bottom: 60px;
   }
   #projects #new-schedule header h1 {
     margin: 80px 0;
@@ -1056,7 +1081,7 @@ footer p {
   footer #footer-contact #social-media strong {
     font-size: 32px;
     margin-bottom: 5px;
-    color: var(--gray-bf);
+    color: var(--bg-color);
   }
   footer #footer-contact #social-media strong:last-child {
     font-size: 20px;
@@ -1067,10 +1092,15 @@ footer p {
     align-items: center;
   }
   footer #footer-contact #social-media ul li {
-    color: var(--gray-bf);
+    color: var(--bg-color);
+  }
+  footer #footer-contact #social-media ul li a {
+    text-decoration: none;
+    color: var(--bg-color);
+    font-size: 18px;
   }
   footer #footer-contact #social-media ul li a img {
-    width: 40px;
+    width: 30px;
     margin: 0 10px;
   }
   footer #footer-contact #perfect-location {
@@ -1084,7 +1114,7 @@ footer p {
   }
   footer #footer-contact #perfect-location strong {
     font-size: 24px;
-    color: var(--gray-e4);
+    color: var(--bg-color);
     margin-left: 35px;
   }
   footer p {
@@ -1092,7 +1122,7 @@ footer p {
     padding: 0;
     margin-top: 15px;
     font-size: 15px;
-    color: var(--gray-bf);
+    color: var(--bg-color);
     text-align: center;
   }
 }
