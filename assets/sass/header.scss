@@ -186,6 +186,9 @@
               flex-direction: row;
               justify-content: space-between;
               align-items: center;
+              &:first-child {
+                margin-bottom: 20px;
+              }
               a {
                 align-items: center;
                 text-decoration: none;
@@ -237,6 +240,19 @@
           li {
             a {
               font-size: 22px;
+            }
+          }
+          div {
+            div {
+              a {
+                img {
+                  width: 40px;
+                  height: 40px;
+                }
+                li {
+                  font-size: 22px;
+                }
+              }
             }
           }
         }
