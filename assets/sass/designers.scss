@@ -1,158 +1,155 @@
 #designers {
+  flex-direction: column;
+  width: 100%;
+  h1 {
+    @include title-mobile;
+    justify-content: center;
+  }
+  select {
+    width: 50%;
+    margin-bottom: 20px;
+    border: 0;
+    margin-left: 10px;
+    padding: 0;
+    font-size: 14px;
+    color: var(--gray-72);
+    border: var(--gray-72) solid 1px;
+    &:first-child {
+      border-right: var(--gray-72) solid 1px;
+    }
+  }
+  .designer-information {
     flex-direction: column;
-    width: 100%;
-    h1 {
-        @include title-mobile;
-        justify-content: center;
-    }
-    select {
-        width: 50%;
-        margin-bottom: 20px;
-        border: 0;
-        margin-left: 10px;
-        padding: 0;
-        font-size: 14px;
+    #designer-id {
+      justify-content: space-between;
+      h2 {
+        margin: 0 10px;
+        font-family: "Montserrat Alternates";
+        font-size: 24px;
         color: var(--gray-72);
-        border: var(--gray-72) solid 1px;
-        &:first-child {
-            border-right: var(--gray-72) solid 1px;
-        }
+      }
     }
-    .designer-information {
-        flex-direction: column;
-        #designer-id {
-            justify-content: space-between;
-            h2 {
-                margin: 0 10px;
-                font-family: 'Montserrat Alternates';
-                font-size: 24px;
-                color: var(--gray-72);
-            }
-        }
-        .designer-photo {
-            img {
-                width: 100%;
-            }
-        }
-        article {
-            margin: 60px 30px;
-            text-align: justify;
-            font-family: 'Montserrat Alternates';
-            font-weight: 300;
-            font-size: 14px;
-            color: var(--gray-72);
-        }
+    .designer-photo {
+      img {
+        width: 100%;
+      }
     }
+    article {
+      margin: 60px 30px;
+      text-align: justify;
+      font-family: "Montserrat Alternates";
+      font-weight: 300;
+      font-size: 14px;
+      color: var(--gray-72);
+    }
+  }
 }
 
 @media (min-width: 1024px) {
-    #designers {
-        flex-direction: column;
-        width: 100%;
-        h1 {
-            @include title-1024;
-            font-size: 60px;
-            margin: 80px 0;
-        }
-        select {
-            width: 300px;
-            font-size: 20px;
-        }
-        .designer-information {
-            position: relative;
-            margin-bottom: 100px;
-            #designer-id {
-                width: 50%;
-                picture {
-                    img {
-                        margin-left: 4px;
-                    }
-                }
-            }
-            .designer-photo {
-                width: 50%;
-            }
-            article {
-                width: 40%;
-                position: absolute;
-                top: 0;
-                right: 30px;
-                font-size: 24px;
-                margin-top: 24px;
-            }
-        }
+  #designers {
+    flex-direction: column;
+    width: 100%;
+    h1 {
+      @include title-1024;
+      font-size: 60px;
+      margin: 80px 0;
     }
-
+    select {
+      width: 300px;
+      font-size: 20px;
+    }
+    .designer-information {
+      position: relative;
+      margin-bottom: 100px;
+      #designer-id {
+        width: 50%;
+        picture {
+          img {
+            margin-left: 4px;
+          }
+        }
+      }
+      .designer-photo {
+        width: 50%;
+      }
+      article {
+        width: 40%;
+        position: absolute;
+        top: 0;
+        right: 30px;
+        font-size: 24px;
+        margin-top: 24px;
+      }
+    }
+  }
 }
 
 @media (min-width: 1366px) {
-    #designers {
-        h1 {
-            font-size: 70px;
-            margin: 100px 0;
-        }
-        .designer-information {
-            position: relative;
-            #designer-id {
-                position: absolute;
-                right: 10px;
-                top: 0;
-                h2 {
-                    font-size: 36px;
-                    margin: 0;
-                }
-                picture {
-                    position: absolute;
-                    top: 50px;
-                    left: 70px;
-                }
-            }
-            .designer-photo {
-                img {
-                    width: 70%;
-                }
-            }
-            article {
-                margin-top: 120px;
-                width: 40%;
-                font-size: 24px;
-                right: 120px;
-            }
-        }
+  #designers {
+    h1 {
+      font-size: 70px;
+      margin: 100px 0;
     }
-
+    .designer-information {
+      position: relative;
+      #designer-id {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        h2 {
+          font-size: 36px;
+          margin: 0;
+        }
+        picture {
+          position: absolute;
+          top: 50px;
+          left: 70px;
+        }
+      }
+      .designer-photo {
+        img {
+          width: 70%;
+        }
+      }
+      article {
+        margin-top: 120px;
+        width: 40%;
+        font-size: 24px;
+        right: 120px;
+      }
+    }
+  }
 }
 
 @media (min-width: 1920px) {
-    #designers {
-        h1 {
-            font-size: 100px;
-            margin: 150px 0;
-        }
-        select {
-            width: 320px;
-            font-size: 26px;
-        }
-        .designer-information {
-            position: relative;
-            #designer-id {
-                position: absolute;
-                h2 {
-                    font-size: 42px;
-                    margin-left: 0;
-                }
-                picture {
-                    img {
-                        width: 40px;
-                    }
-                }
-            }
-            article {
-                position: absolute;
-                right: 173px;
-                font-size: 34px;
-            }
-        }
+  #designers {
+    h1 {
+      font-size: 100px;
+      margin: 150px 0;
     }
-
+    select {
+      width: 320px;
+      font-size: 26px;
+    }
+    .designer-information {
+      position: relative;
+      #designer-id {
+        position: absolute;
+        h2 {
+          font-size: 42px;
+          margin-left: 0;
+        }
+        picture {
+          img {
+            width: 40px;
+          }
+        }
+      }
+      article {
+        position: absolute;
+        right: 173px;
+        font-size: 34px;
+      }
+    }
+  }
 }

@@ -119,6 +119,7 @@
         height: 30px;
         left: calc(50% - 150px);
         border: var(--black) solid 1px;
+        font-size: 16px;
       }
       #magnifier {
         position: absolute;
@@ -292,7 +293,7 @@
         font-weight: 700;
         text-transform: uppercase;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(7, 1fr);
         li {
           justify-content: center;
           padding: 8px 0;
@@ -302,8 +303,8 @@
       }
       .days {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 12vw 12vw 12vw 12vw12vw;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(5, 5vh);
         grid-gap: 5px;
         li {
           justify-content: center;
@@ -407,6 +408,7 @@
         width: 400px;
         height: 30px;
         #product {
+          font-size: 18px;
           left: calc(50% - 200px);
         }
       }
@@ -518,6 +520,7 @@
         #product {
           height: 40px;
           left: calc(50% - 250px);
+          font-size: 22px;
         }
         #magnifier {
           width: 40px;
